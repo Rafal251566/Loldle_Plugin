@@ -23,15 +23,19 @@ class LoldleService(val project: Project) {
             randomChampion = allChamps.random()
             guesses = emptyList()
             isVictory = false
-            println("Selected champion: ${randomChampion?.name}")
+            println("Selected champion: ${randomChampion?.championName}")
         }
     }
 
     fun submitGuess(champion: Champion) {
         if (isVictory) return
 
-        guesses = guesses + champion
-        if (champion.name.equals(randomChampion?.name, ignoreCase = true)) {
+        // Zapobiegamy dodawaniu dwa razy tego samego
+        if (!guesses.any { it.championName == champion.championName }) {
+            guesses = guesses + champion
+        }
+
+        if (champion.championName.equals(randomChampion?.championName, ignoreCase = true)) {
             isVictory = true
         }
     }

@@ -24,13 +24,15 @@ fun loldleGameUI(service: LoldleService) {
     val isVictory = service.isVictory
 
     Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
+        modifier = Modifier.fillMaxSize().padding(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            listOf("Champion", "Species", "Region", "Lane", "Range type", "Resource").forEach { header ->
-                Box(modifier = Modifier.size(80.dp, 30.dp), contentAlignment = Alignment.Center) {
-                    Text(header, fontWeight = FontWeight.Bold)
+        // Headers - 8 kolumn
+        Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+            val headers = listOf("Name", "Gen", "Pos", "Spec", "Res", "Range", "Reg", "Year")
+            headers.forEach { header ->
+                Box(modifier = Modifier.width(70.dp), contentAlignment = Alignment.Center) {
+                    Text(header, fontWeight = FontWeight.Bold, fontSize = 10.sp)
                 }
             }
         }
@@ -39,16 +41,16 @@ fun loldleGameUI(service: LoldleService) {
 
         LazyColumn(modifier = Modifier.weight(1f)) {
             items(guesses) { guess ->
-                guessingRow(selected = guess, goal = randomChampion)
+                championGuessRow(selected = guess, goal = randomChampion)
             }
         }
 
-        Spacer(modifier = Modifier.width(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         if (isVictory) {
-            VictoryPanel(randomChampion.name) { service.startNewGame() }
+            VictoryPanel(randomChampion.championName) { service.startNewGame() }
         } else {
-            autocompleteSearch(
+            autocompleteSearchComponent(
                 allChampions = championRepository.getChampions(),
                 alreadyGuessed = guesses,
                 onGuess = { service.submitGuess(it) }
@@ -63,54 +65,55 @@ fun VictoryPanel(name: String, onReset: () -> Unit) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color(0xFF2E7D32), shape = RoundedCornerShape(12.dp))
-                .padding(16.dp),
+                .background(Color(0xFF2E7D32), shape = RoundedCornerShape(8.dp))
+                .padding(12.dp),
             contentAlignment = Alignment.Center
         ) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("You WON!", color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.Bold)
-                Text("It was $name", color = Color.White)
-            }
+            Text("WON! It was $name", color = Color.White, fontWeight = FontWeight.Bold)
         }
-        Button(onClick = onReset, modifier = Modifier.padding(top = 8.dp)) {
+        Button(onClick = onReset, modifier = Modifier.padding(top = 4.dp)) {
             Text("Play Again")
         }
     }
 }
 
 @Composable
-fun autocompleteSearch(allChampions: List<Champion>, alreadyGuessed: List<Champion>, onGuess: (Champion) -> Unit) {
+fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: List<Champion>, onGuess: (Champion) -> Unit) {
     var inputName by remember { mutableStateOf("") }
     var isMenuExpanded by remember { mutableStateOf(false) }
 
-    val filteredChampions = if (inputName.length < 2) emptyList()
-    else allChampions.filter { it.name.contains(inputName, ignoreCase = true) && !alreadyGuessed.contains(it) }.take(5)
+    val filtered = if (inputName.isBlank()) emptyList()
+    else allChampions.filter {
+        it.championName.contains(inputName, ignoreCase = true) &&
+                !alreadyGuessed.any { g -> g.championName == it.championName }
+    }.take(5)
 
     Row(verticalAlignment = Alignment.CenterVertically) {
         Box {
             TextField(
                 value = inputName,
                 onValueChange = { inputName = it; isMenuExpanded = true },
-                label = { Text("Champion name...") },
-                singleLine = true
+                placeholder = { Text("Search...", fontSize = 12.sp) },
+                singleLine = true,
+                modifier = Modifier.width(180.dp)
             )
             DropdownMenu(
-                expanded = isMenuExpanded && filteredChampions.isNotEmpty(),
+                expanded = isMenuExpanded && filtered.isNotEmpty(),
                 onDismissRequest = { isMenuExpanded = false },
                 properties = PopupProperties(focusable = false)
             ) {
-                filteredChampions.forEach { champ ->
+                filtered.forEach { champ ->
                     DropdownMenuItem(onClick = {
-                        inputName = champ.name
+                        inputName = champ.championName
                         isMenuExpanded = false
-                    }) { Text(champ.name) }
+                    }) { Text(champ.championName) }
                 }
             }
         }
         Spacer(modifier = Modifier.width(8.dp))
         Button(
             onClick = {
-                val found = allChampions.find { it.name.equals(inputName, ignoreCase = true) }
+                val found = allChampions.find { it.championName.equals(inputName, ignoreCase = true) }
                 if (found != null) {
                     onGuess(found)
                     inputName = ""
@@ -122,24 +125,51 @@ fun autocompleteSearch(allChampions: List<Champion>, alreadyGuessed: List<Champi
 }
 
 @Composable
-fun guessingRow(selected: Champion, goal: Champion) {
-    Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(vertical = 4.dp)) {
-        featureBox(selected.name, selected.name == goal.name)
-        featureBox(selected.species, selected.species == goal.species)
-        featureBox(selected.region, selected.region == goal.region)
-        featureBox(selected.lane, selected.lane == goal.lane)
-        featureBox(selected.attackType, selected.attackType == goal.attackType)
-        featureBox(selected.partype, selected.partype == goal.partype)
+fun championGuessRow(selected: Champion, goal: Champion) {
+    Row(horizontalArrangement = Arrangement.spacedBy(4.dp), modifier = Modifier.padding(vertical = 2.dp)) {
+        colorBox(selected.championName, goal.championName)
+        colorBox(selected.gender, goal.gender)
+        colorListBox(selected.positions, goal.positions)
+        colorListBox(selected.species, goal.species)
+        colorBox(selected.resource, goal.resource)
+        colorListBox(selected.range_type, goal.range_type)
+        colorListBox(selected.regions, goal.regions)
+        colorBox(selected.releaseYear, goal.releaseYear)
     }
 }
 
 @Composable
-fun featureBox(value: String, isCorrect: Boolean) {
+fun colorBox(value: String, goal: String) {
+    val bgColor = if (value == goal) Color(0xFF2E7D32) else Color(0xFFC62828)
+    infoBox(value, bgColor)
+}
+
+@Composable
+fun colorListBox(selectedList: List<String>, goalList: List<String>) {
+    val bgColor = when {
+        selectedList.sorted() == goalList.sorted() -> Color(0xFF2E7D32) // Zielony - identyczne
+        selectedList.any { it in goalList } -> Color(0xFFEF6C00) // Pomarańczowy - częściowy
+        else -> Color(0xFFC62828) // Czerwony - brak
+    }
+    infoBox(selectedList.joinToString(", "), bgColor)
+}
+
+@Composable
+fun infoBox(text: String, bgColor: Color) {
     Box(
-        modifier = Modifier.size(80.dp).background(if (isCorrect) Color(0xFF2E7D32) else Color(0xFFC62828))
-            .border(1.dp, Color.Black).padding(4.dp),
+        modifier = Modifier
+            .size(70.dp, 55.dp)
+            .background(bgColor, shape = RoundedCornerShape(4.dp))
+            .border(1.dp, Color.Black.copy(alpha = 0.2f))
+            .padding(4.dp),
         contentAlignment = Alignment.Center
     ) {
-        Text(text = value, color = Color.White, fontSize = 10.sp, textAlign = TextAlign.Center)
+        Text(
+            text = text,
+            color = Color.White,
+            fontSize = 8.sp,
+            lineHeight = 10.sp,
+            textAlign = TextAlign.Center
+        )
     }
 }

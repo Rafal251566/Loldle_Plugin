@@ -9,8 +9,6 @@ import com.intellij.openapi.components.service
 
 class loldleToolWindowFactory : ToolWindowFactory {
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-
-        // Pobieramy serwis przypisany do projektu
         val gameService = project.service<LoldleService>()
 
         val composePanel = ComposePanel()
