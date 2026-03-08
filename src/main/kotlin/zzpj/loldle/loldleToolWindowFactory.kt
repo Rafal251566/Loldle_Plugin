@@ -11,7 +11,7 @@ class loldleToolWindowFactory : ToolWindowFactory {
         val composePanel = ComposePanel()
 
         composePanel.setContent{
-            //TODO some UI class
+            loldleGameUI()
         }
         val contentFactory = ContentFactory.getInstance()
         val content = contentFactory.createContent(composePanel, "Guess the champion", false)
