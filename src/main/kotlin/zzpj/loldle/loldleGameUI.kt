@@ -14,8 +14,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -50,10 +53,10 @@ fun loldleGameUI(service: LoldleService) {
                     horizontalArrangement = Arrangement.spacedBy(4.dp),
                     modifier = Modifier.padding(end = 16.dp)
                 ) {
-                    val headers = listOf("Name", "Gen", "Pos", "Spec", "Res", "Range", "Reg", "Year")
+                    val headers = listOf("Bohater", "Płeć", "Pozycja", "Gatunek", "Zasoby", "Typ zasięgu", "Region", "Rok wydania")
                     headers.forEach { header ->
                         Box(modifier = Modifier.width(80.dp), contentAlignment = Alignment.Center) {
-                            Text(header, fontWeight = FontWeight.ExtraBold, fontSize = 12.sp)
+                            Text(header, fontWeight = FontWeight.ExtraBold, fontSize = 11.sp, color = Color.White)
                         }
                     }
                 }
@@ -102,13 +105,27 @@ fun VictoryPanel(name: String, onReset: () -> Unit) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         Box(
             modifier = Modifier
-                .background(Color(0xFF2E7D32), shape = RoundedCornerShape(8.dp))
+                .background(
+                    brush = Brush.horizontalGradient(
+                        colors = listOf(Color(0xFF091428), Color(0xFF0A323C))
+                    ),
+                    shape = RoundedCornerShape(8.dp)
+                )
+                .border(2.dp, Color(0xFFC8AA6E), RoundedCornerShape(8.dp))
                 .padding(horizontal = 24.dp, vertical = 12.dp),
             contentAlignment = Alignment.Center
         ) {
-            Text("Wygrana! Champion to $name.", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+            Text("🎉 WYGRANA! To jest $name.", color = Color(0xFFF0E6D2), fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
-        Button(onClick = onReset, modifier = Modifier.padding(top = 8.dp)) {
+
+        Button(
+            onClick = onReset,
+            modifier = Modifier.padding(top = 12.dp),
+            colors = ButtonDefaults.buttonColors(
+                backgroundColor = Color(0xFF1E2328),
+                contentColor = Color(0xFFC8AA6E)
+            )
+        ) {
             Text("Zagraj ponownie")
         }
     }
@@ -156,7 +173,13 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
                     inputName = ""
                 }
             },
-            enabled = inputName.isNotBlank()
+            enabled = inputName.isNotBlank(),
+            colors = ButtonDefaults.buttonColors(
+                backgroundColor = Color(0xFF0A323C),
+                contentColor = Color(0xFFF0E6D2),
+                disabledBackgroundColor = Color(0xFF333333),
+                disabledContentColor = Color.Gray
+            )
         ) { Text("Zgadnij") }
     }
 }
@@ -180,30 +203,31 @@ fun championGuessRow(selected: Champion, goal: Champion) {
 
 @Composable
 fun colorBox(value: String, goal: String) {
-    val bgColor = if (value == goal) Color(0xFF2E7D32) else Color(0xFFC62828)
+    val bgColor = if (value.equals(goal, ignoreCase = true)) Color(0xFF188038) else Color(0xFF9E2A2B)
     infoBox(value, bgColor)
 }
 
 @Composable
 fun colorListBox(selectedList: List<String>, goalList: List<String>) {
+    val isExactMatch = selectedList.containsAll(goalList) && goalList.containsAll(selectedList)
+    val hasPartialMatch = selectedList.any { it in goalList }
+
     val bgColor = when {
-        selectedList.sorted() == goalList.sorted() -> Color(0xFF2E7D32)
-        selectedList.any { it in goalList } -> Color(0xFFFBC02D)
-        else -> Color(0xFFC62828)
+        isExactMatch -> Color(0xFF188038)
+        hasPartialMatch -> Color(0xFFD35400)
+        else -> Color(0xFF9E2A2B)
     }
-    infoBox(selectedList.joinToString(", "), bgColor)
+    infoBox(selectedList.joinToString(",\n"), bgColor)
 }
 
 @Composable
 fun colorYearBox(selectedYearStr: String, goalYearStr: String) {
     val selectedYear = selectedYearStr.toIntOrNull() ?: 0
     val goalYear = goalYearStr.toIntOrNull() ?: 0
-    val diff = abs(selectedYear - goalYear)
 
     val bgColor = when {
-        diff == 0 -> Color(0xFF2E7D32)
-        diff <= 2 -> Color(0xFFFBC02D)
-        else -> Color(0xFFC62828)
+        selectedYear == goalYear -> Color(0xFF188038)
+        else -> Color(0xFF9E2A2B)
     }
 
     val arrow = if (selectedYear < goalYear) " ↑" else if (selectedYear > goalYear) " ↓" else ""
@@ -211,22 +235,35 @@ fun colorYearBox(selectedYearStr: String, goalYearStr: String) {
 }
 
 @Composable
-fun infoBox(text: String, bgColor: Color) {
+fun infoBox(text: String, baseColor: Color) {
+    val darkerColor = Color(
+        red = (baseColor.red * 0.7f).coerceIn(0f, 1f),
+        green = (baseColor.green * 0.7f).coerceIn(0f, 1f),
+        blue = (baseColor.blue * 0.7f).coerceIn(0f, 1f),
+        alpha = baseColor.alpha
+    )
+
     Box(
         modifier = Modifier
-            .size(80.dp, 60.dp)
-            .background(bgColor, shape = RoundedCornerShape(4.dp))
-            .border(1.dp, Color.Black.copy(alpha = 0.2f))
-            .padding(2.dp),
+            .size(80.dp, 80.dp)
+            .background(
+                brush = Brush.verticalGradient(listOf(baseColor, darkerColor)),
+                shape = RoundedCornerShape(6.dp)
+            )
+            .border(1.dp, Color(0x60000000), shape = RoundedCornerShape(6.dp))
+            .padding(4.dp),
         contentAlignment = Alignment.Center
     ) {
         Text(
             text = text,
             color = Color.White,
-            fontSize = 13.sp,
-            lineHeight = 13.sp,
+            fontSize = 11.sp,
+            lineHeight = 14.sp,
             textAlign = TextAlign.Center,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            style = LocalTextStyle.current.copy(
+                shadow = Shadow(color = Color(0x80000000), blurRadius = 3f, offset = Offset(2f, 2f))
+            )
         )
     }
 }
@@ -237,15 +274,21 @@ fun championImageBox(championName: String, isGoal: Boolean) {
     val borderColor = if (isGoal) Color(0xFF2E7D32) else Color(0xFFC62828)
     val safeName = championName.replace(" ", "").replace("'", "")
     val url = "https://ddragon.leagueoflegends.com/cdn/16.5.1/img/champion/$safeName.png"
+    val fallbackUrl = "https://ddragon.leagueoflegends.com/cdn/10.18.1/img/profileicon/588.png"
     var image by remember { mutableStateOf<ImageBitmap?>(null) }
 
     LaunchedEffect(url) {
-        try {
-            image = withContext(Dispatchers.IO) {
+        image = withContext(Dispatchers.IO) {
+            try {
                 URL(url).openStream().use { loadImageBitmap(it) }
+            } catch (e: Exception) {
+                println("Nie udało się pobrać obrazka dla: $safeName, ładuję fallback...")
+                try {
+                    URL(fallbackUrl).openStream().use { loadImageBitmap(it) }
+                } catch (fallbackEx: Exception) {
+                    null
+                }
             }
-        } catch (e: Exception) {
-            println("Nie udało się pobrać obrazka dla: $safeName")
         }
     }
 
