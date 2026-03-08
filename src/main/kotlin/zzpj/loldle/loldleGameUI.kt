@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Button
+import androidx.compose.material.DropdownMenu
+import androidx.compose.material.DropdownMenuItem
 import androidx.compose.material.Text
 import androidx.compose.material.TextField
 import androidx.compose.runtime.*
@@ -18,10 +20,13 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun loldleGameUI() {
-    val randomChampion = Champion("Ahri", "Ahri", "Vastaya", "Ionia", "Mid", "Ranged", "Mana")
-
-    var enteredName by remember { mutableStateOf("") }
-
+    val championBase = listOf(
+        Champion("Aatrox", "Aatrox", "Darkin", "Shurima", "Top", "Melee", "Blood Well"),
+        Champion("Ahri", "Ahri", "Vastaya", "Ionia", "Mid", "Ranged", "Mana"),
+        Champion("Akali", "Akali", "Human", "Ionia", "Mid", "Melee", "Energy"),
+        Champion("Alistar", "Alistar", "Minotaur", "Runeterra", "Support", "Melee", "Mana")
+    )
+    val randomChampion = remember { championBase.random() }
     var guesses by remember { mutableStateOf(listOf<Champion>()) }
 
     Column(
@@ -44,37 +49,74 @@ fun loldleGameUI() {
             }
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            TextField(
-                value = enteredName,
-                onValueChange = { enteredName = it },
-                label = { Text("Name the champion...") }
-            )
-
             Spacer(modifier = Modifier.width(8.dp))
 
-            Button(onClick = {
-                val chosen = findChampion(enteredName)
-                if (chosen != null) {
-                    guesses = guesses + chosen
-                    enteredName = ""
-                }
-            }) {
-                Text("Guess")
-            }
+        autocompleteSearch(
+                allChampions = championBase,
+                alreadyGuessed = guesses,
+                onGuess = { guessedChamp -> guesses = guesses + guessedChamp }
+            )
         }
-    }
 }
 
-fun findChampion(name: String): Champion? {
-    val testBase = listOf(
-        Champion("Aatrox", "Aatrox", "Darkin", "Shurima", "Top", "Melee", "Blood Well"),
-        Champion("Ahri", "Ahri", "Vastaya", "Ionia", "Mid", "Ranged", "Mana"),
-        Champion("Akali", "Akali", "Human", "Ionia", "Mid", "Melee", "Energy")
-    )
-    return testBase.find { it.name.equals(name, ignoreCase = true) }
+@Composable
+fun autocompleteSearch(
+    allChampions: List<Champion>,
+    alreadyGuessed: List<Champion>,
+    onGuess: (Champion) -> Unit
+) {
+    var inputName by remember { mutableStateOf("") }
+    var isMenuExpanded by remember { mutableStateOf(false) }
+
+    val filteredChampions = if (inputName.isBlank()) {
+        emptyList()
+    } else {
+        allChampions.filter {
+            it.name.contains(inputName, ignoreCase = true) && !alreadyGuessed.contains(it)
+        }.take(5)
+    }
+
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Box {
+            TextField(
+                value = inputName,
+                onValueChange = {
+                    inputName = it
+                    isMenuExpanded = true
+                },
+                label = { Text("Enter champion name...") },
+                singleLine = true
+            )
+            DropdownMenu(
+                expanded = isMenuExpanded && filteredChampions.isNotEmpty(),
+                onDismissRequest = { isMenuExpanded = false },
+                modifier = Modifier.width(200.dp)
+            ) {
+                filteredChampions.forEach { champ ->
+                    DropdownMenuItem(onClick = {
+                        inputName = champ.name
+                        isMenuExpanded = false
+                    }) {
+                        Text(text = champ.name)
+                    }
+                }
+            }
+        }
+        Spacer(modifier = Modifier.width(8.dp))
+        Button(
+            onClick = {
+                val foundChampion = allChampions.find { it.name.equals(inputName, ignoreCase = true) }
+                if (foundChampion != null && !alreadyGuessed.contains(foundChampion)) {
+                    onGuess(foundChampion)
+                    inputName = ""
+                    isMenuExpanded = false
+                }
+            },
+            enabled = inputName.isNotBlank()
+        ) {
+            Text("Guess")
+        }
+    }
 }
 
 @Composable
