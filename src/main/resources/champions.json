@@ -1,0 +1,1555 @@
+{
+  "type": "champion",
+  "format": "standAloneComplex",
+  "version": "16.5.1",
+  "data": {
+    "Aatrox": {
+      "id": "Aatrox",
+      "name": "Aatrox",
+      "species": "Darkin",
+      "region": "Shurima",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Blood Well"
+    },
+    "Ahri": {
+      "id": "Ahri",
+      "name": "Ahri",
+      "species": "Vastaya",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Akali": {
+      "id": "Akali",
+      "name": "Akali",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Energy"
+    },
+    "Akshan": {
+      "id": "Akshan",
+      "name": "Akshan",
+      "species": "Human",
+      "region": "Shurima",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Alistar": {
+      "id": "Alistar",
+      "name": "Alistar",
+      "species": "Minotaur",
+      "region": "Runeterra",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Ambessa": {
+      "id": "Ambessa",
+      "name": "Ambessa",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Energy"
+    },
+    "Amumu": {
+      "id": "Amumu",
+      "name": "Amumu",
+      "species": "Undead",
+      "region": "Shurima",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Anivia": {
+      "id": "Anivia",
+      "name": "Anivia",
+      "species": "Spirit God",
+      "region": "Freljord",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Annie": {
+      "id": "Annie",
+      "name": "Annie",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Aphelios": {
+      "id": "Aphelios",
+      "name": "Aphelios",
+      "species": "Human",
+      "region": "Targon",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Ashe": {
+      "id": "Ashe",
+      "name": "Ashe",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "AurelionSol": {
+      "id": "AurelionSol",
+      "name": "Aurelion Sol",
+      "species": "Celestial Dragon",
+      "region": "Targon",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Aurora": {
+      "id": "Aurora",
+      "name": "Aurora",
+      "species": "Vastaya",
+      "region": "Freljord",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Azir": {
+      "id": "Azir",
+      "name": "Azir",
+      "species": "Ascended",
+      "region": "Shurima",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Bard": {
+      "id": "Bard",
+      "name": "Bard",
+      "species": "Celestial",
+      "region": "Runeterra",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Belveth": {
+      "id": "Belveth",
+      "name": "Bel'Veth",
+      "species": "Voidborn",
+      "region": "Void",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": ""
+    },
+    "Blitzcrank": {
+      "id": "Blitzcrank",
+      "name": "Blitzcrank",
+      "species": "Golem",
+      "region": "Zaun",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Brand": {
+      "id": "Brand",
+      "name": "Brand",
+      "species": "Humanoid",
+      "region": "Freljord",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Braum": {
+      "id": "Braum",
+      "name": "Braum",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Briar": {
+      "id": "Briar",
+      "name": "Briar",
+      "species": "Golemetric Construct",
+      "region": "Noxus",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Fury"
+    },
+    "Caitlyn": {
+      "id": "Caitlyn",
+      "name": "Caitlyn",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Camille": {
+      "id": "Camille",
+      "name": "Camille",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Cassiopeia": {
+      "id": "Cassiopeia",
+      "name": "Cassiopeia",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Chogath": {
+      "id": "Chogath",
+      "name": "Cho'Gath",
+      "species": "Voidborn",
+      "region": "Void",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Corki": {
+      "id": "Corki",
+      "name": "Corki",
+      "species": "Yordle",
+      "region": "Bandle City",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Darius": {
+      "id": "Darius",
+      "name": "Darius",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Diana": {
+      "id": "Diana",
+      "name": "Diana",
+      "species": "Aspect Host",
+      "region": "Targon",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Draven": {
+      "id": "Draven",
+      "name": "Draven",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "DrMundo": {
+      "id": "DrMundo",
+      "name": "Dr. Mundo",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "None"
+    },
+    "Ekko": {
+      "id": "Ekko",
+      "name": "Ekko",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Elise": {
+      "id": "Elise",
+      "name": "Elise",
+      "species": "Human",
+      "region": "Shadow Isles",
+      "lane": "Jungle",
+      "attackType": "Melee / Ranged",
+      "partype": "Mana"
+    },
+    "Evelynn": {
+      "id": "Evelynn",
+      "name": "Evelynn",
+      "species": "Demon",
+      "region": "Runeterra",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Ezreal": {
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Fiddlesticks": {
+      "id": "Fiddlesticks",
+      "name": "Fiddlesticks",
+      "species": "Demon",
+      "region": "Runeterra",
+      "lane": "Jungle",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Fiora": {
+      "id": "Fiora",
+      "name": "Fiora",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Fizz": {
+      "id": "Fizz",
+      "name": "Fizz",
+      "species": "Yordle",
+      "region": "Bilgewater",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Galio": {
+      "id": "Galio",
+      "name": "Galio",
+      "species": "Golem",
+      "region": "Demacia",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Gangplank": {
+      "id": "Gangplank",
+      "name": "Gangplank",
+      "species": "Human",
+      "region": "Bilgewater",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Garen": {
+      "id": "Garen",
+      "name": "Garen",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "None"
+    },
+    "Gnar": {
+      "id": "Gnar",
+      "name": "Gnar",
+      "species": "Yordle",
+      "region": "Freljord",
+      "lane": "Top",
+      "attackType": "Melee / Ranged",
+      "partype": "Rage"
+    },
+    "Gragas": {
+      "id": "Gragas",
+      "name": "Gragas",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Graves": {
+      "id": "Graves",
+      "name": "Graves",
+      "species": "Human",
+      "region": "Bilgewater",
+      "lane": "Jungle",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Gwen": {
+      "id": "Gwen",
+      "name": "Gwen",
+      "species": "Humanoid",
+      "region": "Shadow Isles",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Hecarim": {
+      "id": "Hecarim",
+      "name": "Hecarim",
+      "species": "Undead",
+      "region": "Shadow Isles",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Heimerdinger": {
+      "id": "Heimerdinger",
+      "name": "Heimerdinger",
+      "species": "Yordle",
+      "region": "Piltover",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Hwei": {
+      "id": "Hwei",
+      "name": "Hwei",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Illaoi": {
+      "id": "Illaoi",
+      "name": "Illaoi",
+      "species": "Human",
+      "region": "Bilgewater",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Irelia": {
+      "id": "Irelia",
+      "name": "Irelia",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Ivern": {
+      "id": "Ivern",
+      "name": "Ivern",
+      "species": "Humanoid",
+      "region": "Ionia",
+      "lane": "Jungle",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Janna": {
+      "id": "Janna",
+      "name": "Janna",
+      "species": "Spirit God",
+      "region": "Zaun",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "JarvanIV": {
+      "id": "JarvanIV",
+      "name": "Jarvan IV",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Jax": {
+      "id": "Jax",
+      "name": "Jax",
+      "species": "Unknown",
+      "region": "Icathia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Jayce": {
+      "id": "Jayce",
+      "name": "Jayce",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Top",
+      "attackType": "Melee / Ranged",
+      "partype": "Mana"
+    },
+    "Jhin": {
+      "id": "Jhin",
+      "name": "Jhin",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Jinx": {
+      "id": "Jinx",
+      "name": "Jinx",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Kaisa": {
+      "id": "Kaisa",
+      "name": "Kai'Sa",
+      "species": "Human",
+      "region": "Void",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Kalista": {
+      "id": "Kalista",
+      "name": "Kalista",
+      "species": "Undead",
+      "region": "Shadow Isles",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Karma": {
+      "id": "Karma",
+      "name": "Karma",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Karthus": {
+      "id": "Karthus",
+      "name": "Karthus",
+      "species": "Undead",
+      "region": "Shadow Isles",
+      "lane": "Jungle",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Kassadin": {
+      "id": "Kassadin",
+      "name": "Kassadin",
+      "species": "Human",
+      "region": "Void",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Katarina": {
+      "id": "Katarina",
+      "name": "Katarina",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "None"
+    },
+    "Kayle": {
+      "id": "Kayle",
+      "name": "Kayle",
+      "species": "Aspect Host",
+      "region": "Targon",
+      "lane": "Top",
+      "attackType": "Melee / Ranged",
+      "partype": "Mana"
+    },
+    "Kayn": {
+      "id": "Kayn",
+      "name": "Kayn",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Kennen": {
+      "id": "Kennen",
+      "name": "Kennen",
+      "species": "Yordle",
+      "region": "Ionia",
+      "lane": "Top",
+      "attackType": "Ranged",
+      "partype": "Energy"
+    },
+    "Khazix": {
+      "id": "Khazix",
+      "name": "Kha'Zix",
+      "species": "Voidborn",
+      "region": "Void",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Kindred": {
+      "id": "Kindred",
+      "name": "Kindred",
+      "species": "Spirit God",
+      "region": "Runeterra",
+      "lane": "Jungle",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Kled": {
+      "id": "Kled",
+      "name": "Kled",
+      "species": "Yordle",
+      "region": "Noxus",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Courage"
+    },
+    "KogMaw": {
+      "id": "KogMaw",
+      "name": "Kog'Maw",
+      "species": "Voidborn",
+      "region": "Void",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "KSante": {
+      "id": "KSante",
+      "name": "K'Sante",
+      "species": "Human",
+      "region": "Shurima",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Leblanc": {
+      "id": "Leblanc",
+      "name": "LeBlanc",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "LeeSin": {
+      "id": "LeeSin",
+      "name": "Lee Sin",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Energy"
+    },
+    "Leona": {
+      "id": "Leona",
+      "name": "Leona",
+      "species": "Aspect Host",
+      "region": "Targon",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Lillia": {
+      "id": "Lillia",
+      "name": "Lillia",
+      "species": "Spirit",
+      "region": "Ionia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Lissandra": {
+      "id": "Lissandra",
+      "name": "Lissandra",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Lucian": {
+      "id": "Lucian",
+      "name": "Lucian",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Lulu": {
+      "id": "Lulu",
+      "name": "Lulu",
+      "species": "Yordle",
+      "region": "Bandle City",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Lux": {
+      "id": "Lux",
+      "name": "Lux",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Malphite": {
+      "id": "Malphite",
+      "name": "Malphite",
+      "species": "Shard of Monolith",
+      "region": "Ixtal",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Malzahar": {
+      "id": "Malzahar",
+      "name": "Malzahar",
+      "species": "Human",
+      "region": "Void",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Maokai": {
+      "id": "Maokai",
+      "name": "Maokai",
+      "species": "Treant",
+      "region": "Shadow Isles",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "MasterYi": {
+      "id": "MasterYi",
+      "name": "Master Yi",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Mel": {
+      "id": "Mel",
+      "name": "Mel",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Milio": {
+      "id": "Milio",
+      "name": "Milio",
+      "species": "Human",
+      "region": "Ixtal",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "MissFortune": {
+      "id": "MissFortune",
+      "name": "Miss Fortune",
+      "species": "Human",
+      "region": "Bilgewater",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "MonkeyKing": {
+      "id": "MonkeyKing",
+      "name": "Wukong",
+      "species": "Vastaya",
+      "region": "Ionia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Mordekaiser": {
+      "id": "Mordekaiser",
+      "name": "Mordekaiser",
+      "species": "Undead",
+      "region": "Noxus",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Shield"
+    },
+    "Morgana": {
+      "id": "Morgana",
+      "name": "Morgana",
+      "species": "Aspect Host",
+      "region": "Demacia",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Naafiri": {
+      "id": "Naafiri",
+      "name": "Naafiri",
+      "species": "Darkin",
+      "region": "Shurima",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Nami": {
+      "id": "Nami",
+      "name": "Nami",
+      "species": "Vastaya",
+      "region": "Targon",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Nasus": {
+      "id": "Nasus",
+      "name": "Nasus",
+      "species": "Ascended",
+      "region": "Shurima",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Nautilus": {
+      "id": "Nautilus",
+      "name": "Nautilus",
+      "species": "Spirit/Construct",
+      "region": "Bilgewater",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Neeko": {
+      "id": "Neeko",
+      "name": "Neeko",
+      "species": "Vastaya",
+      "region": "Ixtal",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Nidalee": {
+      "id": "Nidalee",
+      "name": "Nidalee",
+      "species": "Humanoid",
+      "region": "Ixtal",
+      "lane": "Jungle",
+      "attackType": "Melee / Ranged",
+      "partype": "Mana"
+    },
+    "Nilah": {
+      "id": "Nilah",
+      "name": "Nilah",
+      "species": "Human",
+      "region": "Bilgewater",
+      "lane": "Adc",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Nocturne": {
+      "id": "Nocturne",
+      "name": "Nocturne",
+      "species": "Demon",
+      "region": "Runeterra",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Nunu": {
+      "id": "Nunu",
+      "name": "Nunu & Willump",
+      "species": "Human & Yeti",
+      "region": "Freljord",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Olaf": {
+      "id": "Olaf",
+      "name": "Olaf",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Orianna": {
+      "id": "Orianna",
+      "name": "Orianna",
+      "species": "Golem",
+      "region": "Piltover",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Ornn": {
+      "id": "Ornn",
+      "name": "Ornn",
+      "species": "Spirit God",
+      "region": "Freljord",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Pantheon": {
+      "id": "Pantheon",
+      "name": "Pantheon",
+      "species": "Human",
+      "region": "Targon",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Poppy": {
+      "id": "Poppy",
+      "name": "Poppy",
+      "species": "Yordle",
+      "region": "Demacia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Pyke": {
+      "id": "Pyke",
+      "name": "Pyke",
+      "species": "Undead",
+      "region": "Bilgewater",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Qiyana": {
+      "id": "Qiyana",
+      "name": "Qiyana",
+      "species": "Human",
+      "region": "Ixtal",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Quinn": {
+      "id": "Quinn",
+      "name": "Quinn",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Top",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Rakan": {
+      "id": "Rakan",
+      "name": "Rakan",
+      "species": "Vastaya",
+      "region": "Ionia",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Rammus": {
+      "id": "Rammus",
+      "name": "Rammus",
+      "species": "Spirit/God-Warrior?",
+      "region": "Shurima",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "RekSai": {
+      "id": "RekSai",
+      "name": "Rek'Sai",
+      "species": "Voidborn",
+      "region": "Void",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Rage"
+    },
+    "Rell": {
+      "id": "Rell",
+      "name": "Rell",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Renata": {
+      "id": "Renata",
+      "name": "Renata Glasc",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Renekton": {
+      "id": "Renekton",
+      "name": "Renekton",
+      "species": "Ascended",
+      "region": "Shurima",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Fury"
+    },
+    "Rengar": {
+      "id": "Rengar",
+      "name": "Rengar",
+      "species": "Vastaya",
+      "region": "Ixtal",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Ferocity"
+    },
+    "Riven": {
+      "id": "Riven",
+      "name": "Riven",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "None"
+    },
+    "Rumble": {
+      "id": "Rumble",
+      "name": "Rumble",
+      "species": "Yordle",
+      "region": "Bandle City",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Heat"
+    },
+    "Ryze": {
+      "id": "Ryze",
+      "name": "Ryze",
+      "species": "Human",
+      "region": "Runeterra",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Samira": {
+      "id": "Samira",
+      "name": "Samira",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Adc",
+      "attackType": "Melee / Ranged",
+      "partype": "Mana"
+    },
+    "Sejuani": {
+      "id": "Sejuani",
+      "name": "Sejuani",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Senna": {
+      "id": "Senna",
+      "name": "Senna",
+      "species": "Undead",
+      "region": "Shadow Isles",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Seraphine": {
+      "id": "Seraphine",
+      "name": "Seraphine",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Sett": {
+      "id": "Sett",
+      "name": "Sett",
+      "species": "Vastayan Half-breed",
+      "region": "Ionia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Grit"
+    },
+    "Shaco": {
+      "id": "Shaco",
+      "name": "Shaco",
+      "species": "Spirit/Golem?",
+      "region": "Runeterra",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Shen": {
+      "id": "Shen",
+      "name": "Shen",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Energy"
+    },
+    "Shyvana": {
+      "id": "Shyvana",
+      "name": "Shyvana",
+      "species": "Half-Dragon",
+      "region": "Demacia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Fury"
+    },
+    "Singed": {
+      "id": "Singed",
+      "name": "Singed",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Sion": {
+      "id": "Sion",
+      "name": "Sion",
+      "species": "Undead",
+      "region": "Noxus",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Sivir": {
+      "id": "Sivir",
+      "name": "Sivir",
+      "species": "Human",
+      "region": "Shurima",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Skarner": {
+      "id": "Skarner",
+      "name": "Skarner",
+      "species": "Brackern",
+      "region": "Ixtal",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Smolder": {
+      "id": "Smolder",
+      "name": "Smolder",
+      "species": "Dragon",
+      "region": "Camavor",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Sona": {
+      "id": "Sona",
+      "name": "Sona",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Soraka": {
+      "id": "Soraka",
+      "name": "Soraka",
+      "species": "Celestial",
+      "region": "Targon",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Swain": {
+      "id": "Swain",
+      "name": "Swain",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Sylas": {
+      "id": "Sylas",
+      "name": "Sylas",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Syndra": {
+      "id": "Syndra",
+      "name": "Syndra",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "TahmKench": {
+      "id": "TahmKench",
+      "name": "Tahm Kench",
+      "species": "Demon",
+      "region": "Runeterra",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Taliyah": {
+      "id": "Taliyah",
+      "name": "Taliyah",
+      "species": "Human",
+      "region": "Shurima",
+      "lane": "Jungle",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Talon": {
+      "id": "Talon",
+      "name": "Talon",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Taric": {
+      "id": "Taric",
+      "name": "Taric",
+      "species": "Aspect Host",
+      "region": "Targon",
+      "lane": "Support",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Teemo": {
+      "id": "Teemo",
+      "name": "Teemo",
+      "species": "Yordle",
+      "region": "Bandle City",
+      "lane": "Top",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Thresh": {
+      "id": "Thresh",
+      "name": "Thresh",
+      "species": "Undead",
+      "region": "Shadow Isles",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Tristana": {
+      "id": "Tristana",
+      "name": "Tristana",
+      "species": "Yordle",
+      "region": "Bandle City",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Trundle": {
+      "id": "Trundle",
+      "name": "Trundle",
+      "species": "Troll",
+      "region": "Freljord",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Tryndamere": {
+      "id": "Tryndamere",
+      "name": "Tryndamere",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Fury"
+    },
+    "TwistedFate": {
+      "id": "TwistedFate",
+      "name": "Twisted Fate",
+      "species": "Human",
+      "region": "Bilgewater",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Twitch": {
+      "id": "Twitch",
+      "name": "Twitch",
+      "species": "Plague Rat",
+      "region": "Zaun",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Udyr": {
+      "id": "Udyr",
+      "name": "Udyr",
+      "species": "Human",
+      "region": "Freljord",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Urgot": {
+      "id": "Urgot",
+      "name": "Urgot",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Top",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Varus": {
+      "id": "Varus",
+      "name": "Varus",
+      "species": "Darkin",
+      "region": "Ionia",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Vayne": {
+      "id": "Vayne",
+      "name": "Vayne",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Veigar": {
+      "id": "Veigar",
+      "name": "Veigar",
+      "species": "Yordle",
+      "region": "Bandle City",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Velkoz": {
+      "id": "Velkoz",
+      "name": "Vel'Koz",
+      "species": "Voidborn",
+      "region": "Void",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Vex": {
+      "id": "Vex",
+      "name": "Vex",
+      "species": "Yordle",
+      "region": "Shadow Isles",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Vi": {
+      "id": "Vi",
+      "name": "Vi",
+      "species": "Human",
+      "region": "Piltover",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Viego": {
+      "id": "Viego",
+      "name": "Viego",
+      "species": "Undead",
+      "region": "Shadow Isles",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "None"
+    },
+    "Viktor": {
+      "id": "Viktor",
+      "name": "Viktor",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Vladimir": {
+      "id": "Vladimir",
+      "name": "Vladimir",
+      "species": "Human",
+      "region": "Noxus",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Crimson Rush"
+    },
+    "Volibear": {
+      "id": "Volibear",
+      "name": "Volibear",
+      "species": "Spirit God",
+      "region": "Freljord",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Warwick": {
+      "id": "Warwick",
+      "name": "Warwick",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Xayah": {
+      "id": "Xayah",
+      "name": "Xayah",
+      "species": "Vastaya",
+      "region": "Ionia",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Xerath": {
+      "id": "Xerath",
+      "name": "Xerath",
+      "species": "Ascended",
+      "region": "Shurima",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "XinZhao": {
+      "id": "XinZhao",
+      "name": "Xin Zhao",
+      "species": "Human",
+      "region": "Demacia",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Yasuo": {
+      "id": "Yasuo",
+      "name": "Yasuo",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Flow"
+    },
+    "Yone": {
+      "id": "Yone",
+      "name": "Yone",
+      "species": "Undead",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Flow"
+    },
+    "Yorick": {
+      "id": "Yorick",
+      "name": "Yorick",
+      "species": "Human",
+      "region": "Shadow Isles",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Yunara": {
+      "id": "Yunara",
+      "name": "Yunara",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Yuumi": {
+      "id": "Yuumi",
+      "name": "Yuumi",
+      "species": "Magical Cat",
+      "region": "Bandle City",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Zaahen": {
+      "id": "Zaahen",
+      "name": "Zaahen",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Top",
+      "attackType": "Melee",
+      "partype": "Mana"
+    },
+    "Zac": {
+      "id": "Zac",
+      "name": "Zac",
+      "species": "Golem",
+      "region": "Zaun",
+      "lane": "Jungle",
+      "attackType": "Melee",
+      "partype": "None"
+    },
+    "Zed": {
+      "id": "Zed",
+      "name": "Zed",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Mid",
+      "attackType": "Melee",
+      "partype": "Energy"
+    },
+    "Zeri": {
+      "id": "Zeri",
+      "name": "Zeri",
+      "species": "Human",
+      "region": "Zaun",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Ziggs": {
+      "id": "Ziggs",
+      "name": "Ziggs",
+      "species": "Yordle",
+      "region": "Zaun",
+      "lane": "Adc",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Zilean": {
+      "id": "Zilean",
+      "name": "Zilean",
+      "species": "Human",
+      "region": "Ionia",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Zoe": {
+      "id": "Zoe",
+      "name": "Zoe",
+      "species": "Aspect Host",
+      "region": "Targon",
+      "lane": "Mid",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    },
+    "Zyra": {
+      "id": "Zyra",
+      "name": "Zyra",
+      "species": "Plant",
+      "region": "Ixtal",
+      "lane": "Support",
+      "attackType": "Ranged",
+      "partype": "Mana"
+    }
+  }
+}

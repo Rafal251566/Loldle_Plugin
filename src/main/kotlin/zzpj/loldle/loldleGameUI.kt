@@ -20,12 +20,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun loldleGameUI() {
-    val championBase = listOf(
-        Champion("Aatrox", "Aatrox", "Darkin", "Shurima", "Top", "Melee", "Blood Well"),
-        Champion("Ahri", "Ahri", "Vastaya", "Ionia", "Mid", "Ranged", "Mana"),
-        Champion("Akali", "Akali", "Human", "Ionia", "Mid", "Melee", "Energy"),
-        Champion("Alistar", "Alistar", "Minotaur", "Runeterra", "Support", "Melee", "Mana")
-    )
+    val championBase = championRepository.champions
     val randomChampion = remember { championBase.random() }
     var guesses by remember { mutableStateOf(listOf<Champion>()) }
 

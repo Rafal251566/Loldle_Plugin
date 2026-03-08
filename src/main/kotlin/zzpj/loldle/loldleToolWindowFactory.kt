@@ -8,8 +8,10 @@ import androidx.compose.ui.awt.ComposePanel
 
 class loldleToolWindowFactory : ToolWindowFactory {
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-        val composePanel = ComposePanel()
 
+        championRepository.loadChampions()
+
+        val composePanel = ComposePanel()
         composePanel.setContent{
             loldleGameUI()
         }

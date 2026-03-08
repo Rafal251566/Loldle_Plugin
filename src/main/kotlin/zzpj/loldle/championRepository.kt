@@ -1,5 +1,15 @@
 package zzpj.loldle
 
+import com.google.gson.Gson
+import java.io.InputStreamReader
+
+
+data class DataResponse(
+    val type: String,
+    val format: String,
+    val version: String,
+    val data: Map<String, Champion>
+)
 
 data class Champion(
     val id: String,
@@ -10,3 +20,23 @@ data class Champion(
     val attackType: String,
     val partype: String
 )
+
+object championRepository {
+    var champions: List<Champion> = emptyList()
+
+    fun loadChampions() {
+        try {
+            val inputStream = this::class.java.getResourceAsStream("/champions.json")
+            if (inputStream != null) {
+                val reader = InputStreamReader(inputStream, "UTF-8")
+                val response = Gson().fromJson(reader, DataResponse::class.java)
+                champions = response.data.values.toList()
+                println("Succes: Loaded ${champions.size} champions!")
+            } else {
+                println("Error: File champions.json not found!")
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+}
