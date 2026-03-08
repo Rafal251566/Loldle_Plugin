@@ -1,11 +1,13 @@
 package zzpj.loldle
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -26,6 +28,7 @@ import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.net.URL
+import androidx.compose.foundation.TooltipArea
 
 @Composable
 fun spellGameUI(service: LoldleService) {
@@ -92,6 +95,41 @@ fun spellGameUI(service: LoldleService) {
                 alreadyGuessed = guesses,
                 onGuess = { service.submitSpellGuess(it) }
             )
+        }
+    }
+}
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+fun HelpTooltip() {
+    TooltipArea(
+        tooltip = {
+            Box(
+                modifier = Modifier
+                    .shadow(4.dp, RoundedCornerShape(8.dp))
+                    .background(Color(0xFF1E2328), RoundedCornerShape(8.dp))
+                    .border(1.dp, Color(0xFFC8AA6E), RoundedCornerShape(8.dp))
+                    .padding(12.dp)
+            ) {
+                Column {
+                    Text("Jak grać?", color = Color(0xFFC8AA6E), fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    Spacer(modifier = Modifier.height(6.dp))
+                    Text("1. Zgadnij, czyja to umiejętność.", color = Color.White, fontSize = 12.sp)
+                    Text("2. Szary obrazek zyska kolory po 3 błędach.", color = Color.White, fontSize = 12.sp)
+                    Text("3. Po 6 błędach poznasz linię postaci.", color = Color.White, fontSize = 12.sp)
+                    Text("4. Po wygranej odgadnij przypisany klawisz!", color = Color.White, fontSize = 12.sp)
+                }
+            }
+        },
+        delayMillis = 200
+    ) {
+        Box(
+            modifier = Modifier
+                .size(46.dp)
+                .background(Color(0xFF0A323C), shape = CircleShape)
+                .border(2.dp, Color(0xFFC8AA6E), shape = CircleShape),
+            contentAlignment = Alignment.Center
+        ) {
+            Text("?", color = Color(0xFFC8AA6E), fontWeight = FontWeight.ExtraBold, fontSize = 20.sp)
         }
     }
 }
@@ -248,6 +286,9 @@ fun SimpleAutocompleteSearch(allNames: List<String>, alreadyGuessed: List<String
     }.take(5)
 
     Row(verticalAlignment = Alignment.CenterVertically) {
+        HelpTooltip()
+        Spacer(modifier = Modifier.width(12.dp))
+
         Box {
             OutlinedTextField(
                 value = inputName,
@@ -280,6 +321,7 @@ fun SimpleAutocompleteSearch(allNames: List<String>, alreadyGuessed: List<String
                 }
             },
             enabled = inputName.isNotBlank(),
+            modifier = Modifier.height(56.dp),
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = Color(0xFF0A323C),
                 contentColor = Color(0xFFF0E6D2)

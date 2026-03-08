@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.TooltipArea
 import androidx.compose.material.*
@@ -100,6 +101,43 @@ fun loldleGameUI(service: LoldleService) {
     }
 }
 
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+fun ClassicHelpTooltip() {
+    TooltipArea(
+        tooltip = {
+            Box(
+                modifier = Modifier
+                    .shadow(4.dp, RoundedCornerShape(8.dp))
+                    .background(Color(0xFF1E2328), RoundedCornerShape(8.dp))
+                    .border(1.dp, Color(0xFFC8AA6E), RoundedCornerShape(8.dp))
+                    .padding(12.dp)
+            ) {
+                Column {
+                    Text("Jak grać?", color = Color(0xFFC8AA6E), fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    Spacer(modifier = Modifier.height(6.dp))
+                    Text("1. Wpisz nazwę bohatera z League of Legends.", color = Color.White, fontSize = 12.sp)
+                    Text("2. Zielony: Dokładne trafienie.", color = Color.White, fontSize = 12.sp)
+                    Text("3. Pomarańczowy: Częściowe trafienie (np. 1 z 2 ról).", color = Color.White, fontSize = 12.sp)
+                    Text("4. Czerwony: Pudło.", color = Color.White, fontSize = 12.sp)
+                    Text("5. Strzałki: Rok wydania bohatera jest starszy (↓) lub nowszy (↑).", color = Color.White, fontSize = 12.sp)
+                }
+            }
+        },
+        delayMillis = 200
+    ) {
+        Box(
+            modifier = Modifier
+                .size(46.dp)
+                .background(Color(0xFF0A323C), shape = CircleShape)
+                .border(2.dp, Color(0xFFC8AA6E), shape = CircleShape),
+            contentAlignment = Alignment.Center
+        ) {
+            Text("?", color = Color(0xFFC8AA6E), fontWeight = FontWeight.ExtraBold, fontSize = 20.sp)
+        }
+    }
+}
+
 @Composable
 fun VictoryPanel(name: String, onReset: () -> Unit) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -143,6 +181,9 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
     }.take(5)
 
     Row(verticalAlignment = Alignment.CenterVertically) {
+        ClassicHelpTooltip()
+        Spacer(modifier = Modifier.width(12.dp))
+
         Box {
             TextField(
                 value = inputName,
@@ -174,6 +215,7 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
                 }
             },
             enabled = inputName.isNotBlank(),
+            modifier = Modifier.height(56.dp),
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = Color(0xFF0A323C),
                 contentColor = Color(0xFFF0E6D2),
@@ -282,7 +324,6 @@ fun championImageBox(championName: String, isGoal: Boolean) {
             try {
                 URL(url).openStream().use { loadImageBitmap(it) }
             } catch (e: Exception) {
-                println("Nie udało się pobrać obrazka dla: $safeName, ładuję fallback...")
                 try {
                     URL(fallbackUrl).openStream().use { loadImageBitmap(it) }
                 } catch (fallbackEx: Exception) {
