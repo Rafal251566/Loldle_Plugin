@@ -33,7 +33,8 @@ fun spellGameUI(service: LoldleService) {
     val guesses = service.spellGuesses
     val isVictory = service.isSpellVictory
 
-    val allChampionNames = remember { championRepository.getChampions().map { it.championName }.sorted() }
+    val allChampions = remember { championRepository.getChampions() }
+    val allChampionNames = remember { allChampions.map { it.championName }.sorted() }
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
@@ -41,7 +42,36 @@ fun spellGameUI(service: LoldleService) {
     ) {
         BigSpellImage(spell = randomSpell, guessesCount = guesses.size)
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(16.dp))
+
+        if (!isVictory) {
+            if (guesses.size >= 6) {
+                val targetChampion = allChampions.find {
+                    it.championName.equals(randomSpell.champion, ignoreCase = true)
+                }
+                val positionsHint = targetChampion?.positions?.joinToString(", ") ?: "Nieznana"
+
+                Box(
+                    modifier = Modifier
+                        .background(Color(0xFF1E2328), RoundedCornerShape(8.dp))
+                        .border(1.dp, Color(0xFFC8AA6E), RoundedCornerShape(8.dp))
+                        .padding(horizontal = 16.dp, vertical = 8.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "💡 Podpowiedź: Linia - $positionsHint",
+                        color = Color(0xFFC8AA6E),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 13.sp
+                    )
+                }
+            } else {
+                val triesLeft = 6 - guesses.size
+                Text("Podpowiedź za: $triesLeft prób(y)", color = Color.Gray, fontSize = 12.sp)
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
 
         Box(modifier = Modifier.weight(1f).fillMaxWidth(0.6f)) {
             LazyColumn(modifier = Modifier.fillMaxSize()) {
