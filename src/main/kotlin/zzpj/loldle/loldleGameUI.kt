@@ -6,16 +6,25 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.TooltipArea
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.res.loadImageBitmap
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.PopupProperties
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import java.net.URL
 import kotlin.math.abs
 
 @Composable
@@ -158,7 +167,7 @@ fun championGuessRow(selected: Champion, goal: Champion) {
         horizontalArrangement = Arrangement.spacedBy(4.dp),
         modifier = Modifier.padding(vertical = 4.dp)
     ) {
-        colorBox(selected.championName, goal.championName)
+        championImageBox(selected.championName, selected.championName.equals(goal.championName, ignoreCase = true))
         colorBox(selected.gender, goal.gender)
         colorListBox(selected.positions, goal.positions)
         colorListBox(selected.species, goal.species)
@@ -219,5 +228,59 @@ fun infoBox(text: String, bgColor: Color) {
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold
         )
+    }
+}
+
+@OptIn(ExperimentalFoundationApi::class)
+@Composable
+fun championImageBox(championName: String, isGoal: Boolean) {
+    val borderColor = if (isGoal) Color(0xFF2E7D32) else Color(0xFFC62828)
+    val safeName = championName.replace(" ", "").replace("'", "")
+    val url = "https://ddragon.leagueoflegends.com/cdn/16.5.1/img/champion/$safeName.png"
+    var image by remember { mutableStateOf<ImageBitmap?>(null) }
+
+    LaunchedEffect(url) {
+        try {
+            image = withContext(Dispatchers.IO) {
+                URL(url).openStream().use { loadImageBitmap(it) }
+            }
+        } catch (e: Exception) {
+            println("Nie udało się pobrać obrazka dla: $safeName")
+        }
+    }
+
+    TooltipArea(
+        tooltip = {
+            Box(
+                modifier = Modifier
+                    .shadow(4.dp, RoundedCornerShape(4.dp))
+                    .background(Color(0xFF333333), RoundedCornerShape(4.dp))
+                    .border(1.dp, Color(0xFF555555), RoundedCornerShape(4.dp))
+                    .padding(horizontal = 10.dp, vertical = 6.dp)
+            ) {
+                Text(championName, color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+            }
+        },
+        delayMillis = 300
+    ) {
+        Box(
+            modifier = Modifier
+                .size(80.dp, 80.dp)
+                .background(Color.DarkGray, shape = RoundedCornerShape(6.dp))
+                .border(3.dp, borderColor, shape = RoundedCornerShape(6.dp))
+                .padding(3.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            if (image != null) {
+                Image(
+                    bitmap = image!!,
+                    contentDescription = championName,
+                    modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(4.dp)),
+                    contentScale = ContentScale.Crop
+                )
+            } else {
+                Text(championName, color = Color.White, fontSize = 10.sp, textAlign = TextAlign.Center)
+            }
+        }
     }
 }
