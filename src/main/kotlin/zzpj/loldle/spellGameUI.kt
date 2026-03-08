@@ -40,7 +40,7 @@ fun spellGameUI(service: LoldleService) {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        BigSpellImage(spell = randomSpell, guessesCount = guesses.size)
+        BigSpellImage(spell = randomSpell, guessesCount = guesses.size, isVictory = isVictory)
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -85,7 +85,7 @@ fun spellGameUI(service: LoldleService) {
         Spacer(modifier = Modifier.height(16.dp))
 
         if (isVictory) {
-            VictoryPanel(randomSpell.champion) { service.startNewSpellGame() }
+            SpellKeyGuessPanel(spell = randomSpell) { service.startNewSpellGame() }
         } else {
             SimpleAutocompleteSearch(
                 allNames = allChampionNames,
@@ -97,7 +97,81 @@ fun spellGameUI(service: LoldleService) {
 }
 
 @Composable
-fun BigSpellImage(spell: Spell, guessesCount: Int) {
+fun SpellKeyGuessPanel(spell: Spell, onReset: () -> Unit) {
+    var selectedKey by remember(spell) { mutableStateOf<String?>(null) }
+
+    Box(
+        modifier = Modifier
+            .background(Color(0xFF091428), RoundedCornerShape(12.dp))
+            .border(2.dp, Color(0xFFC8AA6E), RoundedCornerShape(12.dp))
+            .padding(16.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text("🎉 To jest ${spell.champion}!", color = Color(0xFFF0E6D2), fontWeight = FontWeight.Bold, fontSize = 18.sp)
+            Spacer(modifier = Modifier.height(8.dp))
+
+            val feedbackText = when {
+                selectedKey == null -> "Która to umiejętność?"
+                selectedKey == spell.key -> "IDEALNIE!"
+                else -> "Pudło! To było ${spell.key}."
+            }
+            val feedbackColor = when {
+                selectedKey == null -> Color.Gray
+                selectedKey == spell.key -> Color(0xFF188038)
+                else -> Color(0xFF9E2A2B)
+            }
+
+            Text(feedbackText, color = feedbackColor, fontSize = 14.sp, fontWeight = FontWeight.Bold)
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                listOf("P", "Q", "W", "E", "R").forEach { key ->
+                    val isSelected = selectedKey == key
+                    val isCorrectKey = key == spell.key
+
+                    val bgColor = when {
+                        selectedKey != null && isCorrectKey -> Color(0xFF188038)
+                        isSelected && !isCorrectKey -> Color(0xFF9E2A2B)
+                        else -> Color(0xFF1E2328)
+                    }
+
+                    Button(
+                        onClick = {
+                            if (selectedKey == null) {
+                                selectedKey = key
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            backgroundColor = bgColor,
+                            contentColor = Color.White
+                        ),
+                        modifier = Modifier.size(48.dp),
+                        contentPadding = PaddingValues(0.dp)
+                    ) {
+                        Text(key, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                    }
+                }
+            }
+
+            if (selectedKey != null) {
+                Spacer(modifier = Modifier.height(16.dp))
+                Button(
+                    onClick = onReset,
+                    colors = ButtonDefaults.buttonColors(
+                        backgroundColor = Color(0xFF0A323C),
+                        contentColor = Color(0xFFF0E6D2)
+                    )
+                ) {
+                    Text("Zagraj ponownie")
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun BigSpellImage(spell: Spell, guessesCount: Int, isVictory: Boolean) {
     val folder = if (spell.type == "passive") "passive" else "spell"
     val url = "https://ddragon.leagueoflegends.com/cdn/16.5.1/img/$folder/${spell.imageId}"
 
@@ -113,7 +187,7 @@ fun BigSpellImage(spell: Spell, guessesCount: Int) {
         }
     }
 
-    val showColor = guessesCount >= 3
+    val showColor = guessesCount >= 3 || isVictory
     val grayscaleFilter = remember {
         ColorFilter.colorMatrix(ColorMatrix().apply { setToSaturation(0f) })
     }
