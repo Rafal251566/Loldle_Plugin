@@ -24,6 +24,9 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <toolWindow id="Loldle"
+                    secondary="true"
+                    anchor="right"
+                    factoryClass="zzpj.loldle.loldleToolWindowFactory"/>
     </extensions>
 </idea-plugin>
