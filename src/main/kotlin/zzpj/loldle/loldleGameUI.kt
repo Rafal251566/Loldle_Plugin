@@ -1,10 +1,10 @@
 package zzpj.loldle
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -16,6 +16,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.PopupProperties
+import kotlin.math.abs
 
 @Composable
 fun loldleGameUI(service: LoldleService) {
@@ -23,29 +24,57 @@ fun loldleGameUI(service: LoldleService) {
     val guesses = service.guesses
     val isVictory = service.isVictory
 
+    val horizontalScrollState = rememberScrollState()
+    val verticalLazyListState = rememberLazyListState()
+
     Column(
         modifier = Modifier.fillMaxSize().padding(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Headers - 8 kolumn
-        Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-            val headers = listOf("Name", "Gen", "Pos", "Spec", "Res", "Range", "Reg", "Year")
-            headers.forEach { header ->
-                Box(modifier = Modifier.width(70.dp), contentAlignment = Alignment.Center) {
-                    Text(header, fontWeight = FontWeight.Bold, fontSize = 10.sp)
+        Box(modifier = Modifier.weight(1f)) {
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .horizontalScroll(horizontalScrollState)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    modifier = Modifier.padding(end = 16.dp)
+                ) {
+                    val headers = listOf("Name", "Gen", "Pos", "Spec", "Res", "Range", "Reg", "Year")
+                    headers.forEach { header ->
+                        Box(modifier = Modifier.width(80.dp), contentAlignment = Alignment.Center) {
+                            Text(header, fontWeight = FontWeight.ExtraBold, fontSize = 12.sp)
+                        }
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(8.dp))
+
+                Box(modifier = Modifier.fillMaxHeight()) {
+                    LazyColumn(
+                        state = verticalLazyListState,
+                        modifier = Modifier.fillMaxHeight()
+                    ) {
+                        items(guesses) { guess ->
+                            championGuessRow(selected = guess, goal = randomChampion)
+                        }
+                    }
                 }
             }
+
+            VerticalScrollbar(
+                adapter = rememberScrollbarAdapter(verticalLazyListState),
+                modifier = Modifier.align(Alignment.CenterEnd).fillMaxHeight()
+            )
+
+            HorizontalScrollbar(
+                adapter = rememberScrollbarAdapter(horizontalScrollState),
+                modifier = Modifier.align(Alignment.BottomStart).fillMaxWidth().padding(bottom = 2.dp)
+            )
         }
 
-        Spacer(modifier = Modifier.height(8.dp))
-
-        LazyColumn(modifier = Modifier.weight(1f)) {
-            items(guesses) { guess ->
-                championGuessRow(selected = guess, goal = randomChampion)
-            }
-        }
-
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(12.dp))
 
         if (isVictory) {
             VictoryPanel(randomChampion.championName) { service.startNewGame() }
@@ -64,15 +93,14 @@ fun VictoryPanel(name: String, onReset: () -> Unit) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         Box(
             modifier = Modifier
-                .fillMaxWidth()
                 .background(Color(0xFF2E7D32), shape = RoundedCornerShape(8.dp))
-                .padding(12.dp),
+                .padding(horizontal = 24.dp, vertical = 12.dp),
             contentAlignment = Alignment.Center
         ) {
-            Text("WON! It was $name", color = Color.White, fontWeight = FontWeight.Bold)
+            Text("Wygrana! Champion to $name.", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp)
         }
-        Button(onClick = onReset, modifier = Modifier.padding(top = 4.dp)) {
-            Text("Play Again")
+        Button(onClick = onReset, modifier = Modifier.padding(top = 8.dp)) {
+            Text("Zagraj ponownie")
         }
     }
 }
@@ -93,9 +121,9 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
             TextField(
                 value = inputName,
                 onValueChange = { inputName = it; isMenuExpanded = true },
-                placeholder = { Text("Search...", fontSize = 12.sp) },
+                placeholder = { Text("Wpisz imię bohatera...") },
                 singleLine = true,
-                modifier = Modifier.width(180.dp)
+                modifier = Modifier.width(200.dp)
             )
             DropdownMenu(
                 expanded = isMenuExpanded && filtered.isNotEmpty(),
@@ -120,13 +148,16 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
                 }
             },
             enabled = inputName.isNotBlank()
-        ) { Text("Guess") }
+        ) { Text("Zgadnij") }
     }
 }
 
 @Composable
 fun championGuessRow(selected: Champion, goal: Champion) {
-    Row(horizontalArrangement = Arrangement.spacedBy(4.dp), modifier = Modifier.padding(vertical = 2.dp)) {
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+        modifier = Modifier.padding(vertical = 4.dp)
+    ) {
         colorBox(selected.championName, goal.championName)
         colorBox(selected.gender, goal.gender)
         colorListBox(selected.positions, goal.positions)
@@ -134,7 +165,7 @@ fun championGuessRow(selected: Champion, goal: Champion) {
         colorBox(selected.resource, goal.resource)
         colorListBox(selected.range_type, goal.range_type)
         colorListBox(selected.regions, goal.regions)
-        colorBox(selected.releaseYear, goal.releaseYear)
+        colorYearBox(selected.releaseYear, goal.releaseYear)
     }
 }
 
@@ -147,29 +178,46 @@ fun colorBox(value: String, goal: String) {
 @Composable
 fun colorListBox(selectedList: List<String>, goalList: List<String>) {
     val bgColor = when {
-        selectedList.sorted() == goalList.sorted() -> Color(0xFF2E7D32) // Zielony - identyczne
-        selectedList.any { it in goalList } -> Color(0xFFEF6C00) // Pomarańczowy - częściowy
-        else -> Color(0xFFC62828) // Czerwony - brak
+        selectedList.sorted() == goalList.sorted() -> Color(0xFF2E7D32)
+        selectedList.any { it in goalList } -> Color(0xFFFBC02D)
+        else -> Color(0xFFC62828)
     }
     infoBox(selectedList.joinToString(", "), bgColor)
+}
+
+@Composable
+fun colorYearBox(selectedYearStr: String, goalYearStr: String) {
+    val selectedYear = selectedYearStr.toIntOrNull() ?: 0
+    val goalYear = goalYearStr.toIntOrNull() ?: 0
+    val diff = abs(selectedYear - goalYear)
+
+    val bgColor = when {
+        diff == 0 -> Color(0xFF2E7D32)
+        diff <= 2 -> Color(0xFFFBC02D)
+        else -> Color(0xFFC62828)
+    }
+
+    val arrow = if (selectedYear < goalYear) " ↑" else if (selectedYear > goalYear) " ↓" else ""
+    infoBox(selectedYearStr + arrow, bgColor)
 }
 
 @Composable
 fun infoBox(text: String, bgColor: Color) {
     Box(
         modifier = Modifier
-            .size(70.dp, 55.dp)
+            .size(80.dp, 60.dp)
             .background(bgColor, shape = RoundedCornerShape(4.dp))
             .border(1.dp, Color.Black.copy(alpha = 0.2f))
-            .padding(4.dp),
+            .padding(2.dp),
         contentAlignment = Alignment.Center
     ) {
         Text(
             text = text,
             color = Color.White,
-            fontSize = 8.sp,
-            lineHeight = 10.sp,
-            textAlign = TextAlign.Center
+            fontSize = 13.sp,
+            lineHeight = 13.sp,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold
         )
     }
 }
