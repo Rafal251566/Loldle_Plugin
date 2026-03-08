@@ -5,6 +5,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.DropdownMenu
 import androidx.compose.material.DropdownMenuItem
@@ -14,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -24,6 +26,7 @@ fun loldleGameUI() {
     val championBase = championRepository.champions
     val randomChampion = remember { championBase.random() }
     var guesses by remember { mutableStateOf(listOf<Champion>()) }
+    val alreadyWon = guesses.isNotEmpty() && guesses.last().name.equals(randomChampion.name, ignoreCase = true)
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
@@ -32,7 +35,7 @@ fun loldleGameUI() {
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             listOf("Champion", "Species", "Region", "Lane", "Range type", "Resource").forEach { header ->
                 Box(modifier = Modifier.size(80.dp, 30.dp), contentAlignment = Alignment.Center) {
-                    Text(header, fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                    Text(header, fontWeight = FontWeight.Bold)
                 }
             }
         }
@@ -45,14 +48,29 @@ fun loldleGameUI() {
             }
         }
 
-            Spacer(modifier = Modifier.width(8.dp))
+        Spacer(modifier = Modifier.width(8.dp))
 
-        autocompleteSearch(
+        if (alreadyWon) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color(0xFF2E7D32), shape = RoundedCornerShape(12.dp))
+                    .padding(16.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("You WON!", color = Color.White, fontSize = 24.sp, fontWeight = FontWeight.ExtraBold)
+                    Text("You guessed the champion: ${randomChampion.name}", color = Color.White, fontSize = 16.sp)
+                }
+            }
+        } else {
+            autocompleteSearch(
                 allChampions = championBase,
                 alreadyGuessed = guesses,
                 onGuess = { guessedChamp -> guesses = guesses + guessedChamp }
             )
         }
+    }
 }
 
 @Composable
