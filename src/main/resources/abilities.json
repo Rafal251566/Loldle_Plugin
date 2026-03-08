@@ -1,0 +1,5072 @@
+[
+  {
+    "champion": "Aatrox",
+    "key": "P",
+    "imageId": "Aatrox_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Aatrox",
+    "key": "Q",
+    "imageId": "AatroxQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aatrox",
+    "key": "W",
+    "imageId": "AatroxW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aatrox",
+    "key": "E",
+    "imageId": "AatroxE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aatrox",
+    "key": "R",
+    "imageId": "AatroxR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ahri",
+    "key": "P",
+    "imageId": "Ahri_SoulEater2.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ahri",
+    "key": "Q",
+    "imageId": "AhriQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ahri",
+    "key": "W",
+    "imageId": "AhriW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ahri",
+    "key": "E",
+    "imageId": "AhriE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ahri",
+    "key": "R",
+    "imageId": "AhriR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akali",
+    "key": "P",
+    "imageId": "Akali_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Akali",
+    "key": "Q",
+    "imageId": "AkaliQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akali",
+    "key": "W",
+    "imageId": "AkaliW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akali",
+    "key": "E",
+    "imageId": "AkaliE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akali",
+    "key": "R",
+    "imageId": "AkaliR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akshan",
+    "key": "P",
+    "imageId": "akshan_p.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Akshan",
+    "key": "Q",
+    "imageId": "AkshanQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akshan",
+    "key": "W",
+    "imageId": "AkshanW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akshan",
+    "key": "E",
+    "imageId": "AkshanE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Akshan",
+    "key": "R",
+    "imageId": "AkshanR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Alistar",
+    "key": "P",
+    "imageId": "Alistar_E.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Alistar",
+    "key": "Q",
+    "imageId": "Pulverize.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Alistar",
+    "key": "W",
+    "imageId": "Headbutt.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Alistar",
+    "key": "E",
+    "imageId": "AlistarE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Alistar",
+    "key": "R",
+    "imageId": "FerociousHowl.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ambessa",
+    "key": "P",
+    "imageId": "Icon_Ambessa_Passive.Domina.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ambessa",
+    "key": "Q",
+    "imageId": "AmbessaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ambessa",
+    "key": "W",
+    "imageId": "AmbessaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ambessa",
+    "key": "E",
+    "imageId": "AmbessaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ambessa",
+    "key": "R",
+    "imageId": "AmbessaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Amumu",
+    "key": "P",
+    "imageId": "Amumu_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Amumu",
+    "key": "Q",
+    "imageId": "BandageToss.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Amumu",
+    "key": "W",
+    "imageId": "AuraofDespair.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Amumu",
+    "key": "E",
+    "imageId": "Tantrum.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Amumu",
+    "key": "R",
+    "imageId": "CurseoftheSadMummy.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Anivia",
+    "key": "P",
+    "imageId": "Anivia_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Anivia",
+    "key": "Q",
+    "imageId": "FlashFrost.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Anivia",
+    "key": "W",
+    "imageId": "Crystallize.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Anivia",
+    "key": "E",
+    "imageId": "Frostbite.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Anivia",
+    "key": "R",
+    "imageId": "GlacialStorm.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Annie",
+    "key": "P",
+    "imageId": "Annie_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Annie",
+    "key": "Q",
+    "imageId": "AnnieQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Annie",
+    "key": "W",
+    "imageId": "AnnieW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Annie",
+    "key": "E",
+    "imageId": "AnnieE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Annie",
+    "key": "R",
+    "imageId": "AnnieR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aphelios",
+    "key": "P",
+    "imageId": "ApheliosP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Aphelios",
+    "key": "Q",
+    "imageId": "ApheliosQ_ClientTooltipWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aphelios",
+    "key": "W",
+    "imageId": "ApheliosW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aphelios",
+    "key": "E",
+    "imageId": "ApheliosE_ClientTooltipWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aphelios",
+    "key": "R",
+    "imageId": "ApheliosR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ashe",
+    "key": "P",
+    "imageId": "Ashe_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ashe",
+    "key": "Q",
+    "imageId": "AsheQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ashe",
+    "key": "W",
+    "imageId": "Volley.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ashe",
+    "key": "E",
+    "imageId": "AsheSpiritOfTheHawk.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ashe",
+    "key": "R",
+    "imageId": "EnchantedCrystalArrow.png",
+    "type": "spell"
+  },
+  {
+    "champion": "AurelionSol",
+    "key": "P",
+    "imageId": "AurelionSolP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "AurelionSol",
+    "key": "Q",
+    "imageId": "AurelionSolQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "AurelionSol",
+    "key": "W",
+    "imageId": "AurelionSolW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "AurelionSol",
+    "key": "E",
+    "imageId": "AurelionSolE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "AurelionSol",
+    "key": "R",
+    "imageId": "AurelionSolR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aurora",
+    "key": "P",
+    "imageId": "AuroraPassive.Aurora.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Aurora",
+    "key": "Q",
+    "imageId": "AuroraQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aurora",
+    "key": "W",
+    "imageId": "AuroraW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aurora",
+    "key": "E",
+    "imageId": "AuroraE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Aurora",
+    "key": "R",
+    "imageId": "AuroraR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Azir",
+    "key": "P",
+    "imageId": "Azir_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Azir",
+    "key": "Q",
+    "imageId": "AzirQWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Azir",
+    "key": "W",
+    "imageId": "AzirW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Azir",
+    "key": "E",
+    "imageId": "AzirEWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Azir",
+    "key": "R",
+    "imageId": "AzirR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Bard",
+    "key": "P",
+    "imageId": "Bard_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Bard",
+    "key": "Q",
+    "imageId": "BardQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Bard",
+    "key": "W",
+    "imageId": "BardW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Bard",
+    "key": "E",
+    "imageId": "BardE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Bard",
+    "key": "R",
+    "imageId": "BardR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Belveth",
+    "key": "P",
+    "imageId": "Belveth_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Belveth",
+    "key": "Q",
+    "imageId": "BelvethQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Belveth",
+    "key": "W",
+    "imageId": "BelvethW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Belveth",
+    "key": "E",
+    "imageId": "BelvethE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Belveth",
+    "key": "R",
+    "imageId": "BelvethR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Blitzcrank",
+    "key": "P",
+    "imageId": "Blitzcrank_ManaBarrier.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Blitzcrank",
+    "key": "Q",
+    "imageId": "RocketGrab.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Blitzcrank",
+    "key": "W",
+    "imageId": "Overdrive.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Blitzcrank",
+    "key": "E",
+    "imageId": "PowerFist.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Blitzcrank",
+    "key": "R",
+    "imageId": "StaticField.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Brand",
+    "key": "P",
+    "imageId": "BrandP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Brand",
+    "key": "Q",
+    "imageId": "BrandQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Brand",
+    "key": "W",
+    "imageId": "BrandW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Brand",
+    "key": "E",
+    "imageId": "BrandE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Brand",
+    "key": "R",
+    "imageId": "BrandR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Braum",
+    "key": "P",
+    "imageId": "Braum_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Braum",
+    "key": "Q",
+    "imageId": "BraumQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Braum",
+    "key": "W",
+    "imageId": "BraumW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Braum",
+    "key": "E",
+    "imageId": "BraumE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Braum",
+    "key": "R",
+    "imageId": "BraumRWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Briar",
+    "key": "P",
+    "imageId": "BriarP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Briar",
+    "key": "Q",
+    "imageId": "BriarQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Briar",
+    "key": "W",
+    "imageId": "BriarW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Briar",
+    "key": "E",
+    "imageId": "BriarE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Briar",
+    "key": "R",
+    "imageId": "BriarR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Caitlyn",
+    "key": "P",
+    "imageId": "Caitlyn_Headshot.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Caitlyn",
+    "key": "Q",
+    "imageId": "CaitlynQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Caitlyn",
+    "key": "W",
+    "imageId": "CaitlynW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Caitlyn",
+    "key": "E",
+    "imageId": "CaitlynE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Caitlyn",
+    "key": "R",
+    "imageId": "CaitlynR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Camille",
+    "key": "P",
+    "imageId": "Camille_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Camille",
+    "key": "Q",
+    "imageId": "CamilleQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Camille",
+    "key": "W",
+    "imageId": "CamilleW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Camille",
+    "key": "E",
+    "imageId": "CamilleE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Camille",
+    "key": "R",
+    "imageId": "CamilleR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Cassiopeia",
+    "key": "P",
+    "imageId": "Cassiopeia_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Cassiopeia",
+    "key": "Q",
+    "imageId": "CassiopeiaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Cassiopeia",
+    "key": "W",
+    "imageId": "CassiopeiaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Cassiopeia",
+    "key": "E",
+    "imageId": "CassiopeiaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Cassiopeia",
+    "key": "R",
+    "imageId": "CassiopeiaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Chogath",
+    "key": "P",
+    "imageId": "GreenTerror_TailSpike.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Chogath",
+    "key": "Q",
+    "imageId": "Rupture.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Chogath",
+    "key": "W",
+    "imageId": "FeralScream.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Chogath",
+    "key": "E",
+    "imageId": "VorpalSpikes.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Chogath",
+    "key": "R",
+    "imageId": "Feast.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Corki",
+    "key": "P",
+    "imageId": "Corki_RapidReload.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Corki",
+    "key": "Q",
+    "imageId": "PhosphorusBomb.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Corki",
+    "key": "W",
+    "imageId": "CarpetBomb.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Corki",
+    "key": "E",
+    "imageId": "GGun.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Corki",
+    "key": "R",
+    "imageId": "MissileBarrage.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Darius",
+    "key": "P",
+    "imageId": "Darius_Icon_Hemorrhage.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Darius",
+    "key": "Q",
+    "imageId": "DariusCleave.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Darius",
+    "key": "W",
+    "imageId": "DariusNoxianTacticsONH.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Darius",
+    "key": "E",
+    "imageId": "DariusAxeGrabCone.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Darius",
+    "key": "R",
+    "imageId": "DariusExecute.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Diana",
+    "key": "P",
+    "imageId": "Diana_Passive_LunarBlade.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Diana",
+    "key": "Q",
+    "imageId": "DianaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Diana",
+    "key": "W",
+    "imageId": "DianaOrbs.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Diana",
+    "key": "E",
+    "imageId": "DianaTeleport.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Diana",
+    "key": "R",
+    "imageId": "DianaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Draven",
+    "key": "P",
+    "imageId": "Draven_passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Draven",
+    "key": "Q",
+    "imageId": "DravenSpinning.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Draven",
+    "key": "W",
+    "imageId": "DravenFury.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Draven",
+    "key": "E",
+    "imageId": "DravenDoubleShot.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Draven",
+    "key": "R",
+    "imageId": "DravenRCast.png",
+    "type": "spell"
+  },
+  {
+    "champion": "DrMundo",
+    "key": "P",
+    "imageId": "DrMundo_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "DrMundo",
+    "key": "Q",
+    "imageId": "DrMundoQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "DrMundo",
+    "key": "W",
+    "imageId": "DrMundoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "DrMundo",
+    "key": "E",
+    "imageId": "DrMundoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "DrMundo",
+    "key": "R",
+    "imageId": "DrMundoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ekko",
+    "key": "P",
+    "imageId": "Ekko_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ekko",
+    "key": "Q",
+    "imageId": "EkkoQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ekko",
+    "key": "W",
+    "imageId": "EkkoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ekko",
+    "key": "E",
+    "imageId": "EkkoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ekko",
+    "key": "R",
+    "imageId": "EkkoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Elise",
+    "key": "P",
+    "imageId": "ElisePassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Elise",
+    "key": "Q",
+    "imageId": "EliseHumanQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Elise",
+    "key": "W",
+    "imageId": "EliseHumanW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Elise",
+    "key": "E",
+    "imageId": "EliseHumanE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Elise",
+    "key": "R",
+    "imageId": "EliseR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Evelynn",
+    "key": "P",
+    "imageId": "Evelynn_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Evelynn",
+    "key": "Q",
+    "imageId": "EvelynnQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Evelynn",
+    "key": "W",
+    "imageId": "EvelynnW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Evelynn",
+    "key": "E",
+    "imageId": "EvelynnE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Evelynn",
+    "key": "R",
+    "imageId": "EvelynnR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ezreal",
+    "key": "P",
+    "imageId": "Ezreal_RisingSpellForce.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ezreal",
+    "key": "Q",
+    "imageId": "EzrealQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ezreal",
+    "key": "W",
+    "imageId": "EzrealW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ezreal",
+    "key": "E",
+    "imageId": "EzrealE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ezreal",
+    "key": "R",
+    "imageId": "EzrealR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "key": "P",
+    "imageId": "FiddlesticksP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "key": "Q",
+    "imageId": "FiddleSticksQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "key": "W",
+    "imageId": "FiddleSticksW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "key": "E",
+    "imageId": "FiddleSticksE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiddlesticks",
+    "key": "R",
+    "imageId": "FiddleSticksR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiora",
+    "key": "P",
+    "imageId": "Fiora_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Fiora",
+    "key": "Q",
+    "imageId": "FioraQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiora",
+    "key": "W",
+    "imageId": "FioraW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiora",
+    "key": "E",
+    "imageId": "FioraE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fiora",
+    "key": "R",
+    "imageId": "FioraR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fizz",
+    "key": "P",
+    "imageId": "Fizz_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Fizz",
+    "key": "Q",
+    "imageId": "FizzQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fizz",
+    "key": "W",
+    "imageId": "FizzW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fizz",
+    "key": "E",
+    "imageId": "FizzE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Fizz",
+    "key": "R",
+    "imageId": "FizzR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Galio",
+    "key": "P",
+    "imageId": "Galio_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Galio",
+    "key": "Q",
+    "imageId": "GalioQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Galio",
+    "key": "W",
+    "imageId": "GalioW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Galio",
+    "key": "E",
+    "imageId": "GalioE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Galio",
+    "key": "R",
+    "imageId": "GalioR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gangplank",
+    "key": "P",
+    "imageId": "Gangplank_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Gangplank",
+    "key": "Q",
+    "imageId": "GangplankQWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gangplank",
+    "key": "W",
+    "imageId": "GangplankW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gangplank",
+    "key": "E",
+    "imageId": "GangplankE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gangplank",
+    "key": "R",
+    "imageId": "GangplankR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Garen",
+    "key": "P",
+    "imageId": "Garen_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Garen",
+    "key": "Q",
+    "imageId": "GarenQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Garen",
+    "key": "W",
+    "imageId": "GarenW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Garen",
+    "key": "E",
+    "imageId": "GarenE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Garen",
+    "key": "R",
+    "imageId": "GarenR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gnar",
+    "key": "P",
+    "imageId": "Gnar_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Gnar",
+    "key": "Q",
+    "imageId": "GnarQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gnar",
+    "key": "W",
+    "imageId": "GnarW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gnar",
+    "key": "E",
+    "imageId": "GnarE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gnar",
+    "key": "R",
+    "imageId": "GnarR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gragas",
+    "key": "P",
+    "imageId": "GragasPassiveHeal.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Gragas",
+    "key": "Q",
+    "imageId": "GragasQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gragas",
+    "key": "W",
+    "imageId": "GragasW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gragas",
+    "key": "E",
+    "imageId": "GragasE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gragas",
+    "key": "R",
+    "imageId": "GragasR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Graves",
+    "key": "P",
+    "imageId": "GravesTrueGrit.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Graves",
+    "key": "Q",
+    "imageId": "GravesQLineSpell.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Graves",
+    "key": "W",
+    "imageId": "GravesSmokeGrenade.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Graves",
+    "key": "E",
+    "imageId": "GravesMove.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Graves",
+    "key": "R",
+    "imageId": "GravesChargeShot.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gwen",
+    "key": "P",
+    "imageId": "Gwen_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Gwen",
+    "key": "Q",
+    "imageId": "GwenQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gwen",
+    "key": "W",
+    "imageId": "GwenW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gwen",
+    "key": "E",
+    "imageId": "GwenE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Gwen",
+    "key": "R",
+    "imageId": "GwenR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hecarim",
+    "key": "P",
+    "imageId": "Hecarim_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Hecarim",
+    "key": "Q",
+    "imageId": "HecarimRapidSlash.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hecarim",
+    "key": "W",
+    "imageId": "HecarimW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hecarim",
+    "key": "E",
+    "imageId": "HecarimRamp.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hecarim",
+    "key": "R",
+    "imageId": "HecarimUlt.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Heimerdinger",
+    "key": "P",
+    "imageId": "Heimerdinger_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Heimerdinger",
+    "key": "Q",
+    "imageId": "HeimerdingerQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Heimerdinger",
+    "key": "W",
+    "imageId": "HeimerdingerW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Heimerdinger",
+    "key": "E",
+    "imageId": "HeimerdingerE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Heimerdinger",
+    "key": "R",
+    "imageId": "HeimerdingerR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hwei",
+    "key": "P",
+    "imageId": "HweiPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Hwei",
+    "key": "Q",
+    "imageId": "HweiQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hwei",
+    "key": "W",
+    "imageId": "HweiW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hwei",
+    "key": "E",
+    "imageId": "HweiE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Hwei",
+    "key": "R",
+    "imageId": "HweiR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Illaoi",
+    "key": "P",
+    "imageId": "Illaoi_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Illaoi",
+    "key": "Q",
+    "imageId": "IllaoiQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Illaoi",
+    "key": "W",
+    "imageId": "IllaoiW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Illaoi",
+    "key": "E",
+    "imageId": "IllaoiE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Illaoi",
+    "key": "R",
+    "imageId": "IllaoiR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Irelia",
+    "key": "P",
+    "imageId": "Irelia_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Irelia",
+    "key": "Q",
+    "imageId": "IreliaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Irelia",
+    "key": "W",
+    "imageId": "IreliaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Irelia",
+    "key": "E",
+    "imageId": "IreliaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Irelia",
+    "key": "R",
+    "imageId": "IreliaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ivern",
+    "key": "P",
+    "imageId": "IvernP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ivern",
+    "key": "Q",
+    "imageId": "IvernQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ivern",
+    "key": "W",
+    "imageId": "IvernW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ivern",
+    "key": "E",
+    "imageId": "IvernE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ivern",
+    "key": "R",
+    "imageId": "IvernR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Janna",
+    "key": "P",
+    "imageId": "Janna_Tailwind.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Janna",
+    "key": "Q",
+    "imageId": "HowlingGale.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Janna",
+    "key": "W",
+    "imageId": "SowTheWind.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Janna",
+    "key": "E",
+    "imageId": "EyeOfTheStorm.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Janna",
+    "key": "R",
+    "imageId": "ReapTheWhirlwind.png",
+    "type": "spell"
+  },
+  {
+    "champion": "JarvanIV",
+    "key": "P",
+    "imageId": "JarvanIVP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "JarvanIV",
+    "key": "Q",
+    "imageId": "JarvanIVDragonStrike.png",
+    "type": "spell"
+  },
+  {
+    "champion": "JarvanIV",
+    "key": "W",
+    "imageId": "JarvanIVGoldenAegis.png",
+    "type": "spell"
+  },
+  {
+    "champion": "JarvanIV",
+    "key": "E",
+    "imageId": "JarvanIVDemacianStandard.png",
+    "type": "spell"
+  },
+  {
+    "champion": "JarvanIV",
+    "key": "R",
+    "imageId": "JarvanIVCataclysm.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jax",
+    "key": "P",
+    "imageId": "Armsmaster_MasterOfArms.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Jax",
+    "key": "Q",
+    "imageId": "JaxQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jax",
+    "key": "W",
+    "imageId": "JaxW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jax",
+    "key": "E",
+    "imageId": "JaxE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jax",
+    "key": "R",
+    "imageId": "JaxR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jayce",
+    "key": "P",
+    "imageId": "Jayce_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Jayce",
+    "key": "Q",
+    "imageId": "JayceToTheSkies.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jayce",
+    "key": "W",
+    "imageId": "JayceStaticField.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jayce",
+    "key": "E",
+    "imageId": "JayceThunderingBlow.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jayce",
+    "key": "R",
+    "imageId": "JayceStanceHtG.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jhin",
+    "key": "P",
+    "imageId": "Jhin_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Jhin",
+    "key": "Q",
+    "imageId": "JhinQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jhin",
+    "key": "W",
+    "imageId": "JhinW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jhin",
+    "key": "E",
+    "imageId": "JhinE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jhin",
+    "key": "R",
+    "imageId": "JhinR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jinx",
+    "key": "P",
+    "imageId": "Jinx_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Jinx",
+    "key": "Q",
+    "imageId": "JinxQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jinx",
+    "key": "W",
+    "imageId": "JinxW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jinx",
+    "key": "E",
+    "imageId": "JinxE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Jinx",
+    "key": "R",
+    "imageId": "JinxR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kaisa",
+    "key": "P",
+    "imageId": "Kaisa_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kaisa",
+    "key": "Q",
+    "imageId": "KaisaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kaisa",
+    "key": "W",
+    "imageId": "KaisaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kaisa",
+    "key": "E",
+    "imageId": "KaisaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kaisa",
+    "key": "R",
+    "imageId": "KaisaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kalista",
+    "key": "P",
+    "imageId": "Kalista_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kalista",
+    "key": "Q",
+    "imageId": "KalistaMysticShot.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kalista",
+    "key": "W",
+    "imageId": "KalistaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kalista",
+    "key": "E",
+    "imageId": "KalistaExpungeWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kalista",
+    "key": "R",
+    "imageId": "KalistaRx.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karma",
+    "key": "P",
+    "imageId": "Karma_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Karma",
+    "key": "Q",
+    "imageId": "KarmaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karma",
+    "key": "W",
+    "imageId": "KarmaSpiritBind.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karma",
+    "key": "E",
+    "imageId": "KarmaSolKimShield.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karma",
+    "key": "R",
+    "imageId": "KarmaMantra.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karthus",
+    "key": "P",
+    "imageId": "Karthus_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Karthus",
+    "key": "Q",
+    "imageId": "KarthusLayWasteA1.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karthus",
+    "key": "W",
+    "imageId": "KarthusWallOfPain.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karthus",
+    "key": "E",
+    "imageId": "KarthusDefile.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Karthus",
+    "key": "R",
+    "imageId": "KarthusFallenOne.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kassadin",
+    "key": "P",
+    "imageId": "Kassadin_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kassadin",
+    "key": "Q",
+    "imageId": "NullLance.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kassadin",
+    "key": "W",
+    "imageId": "NetherBlade.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kassadin",
+    "key": "E",
+    "imageId": "ForcePulse.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kassadin",
+    "key": "R",
+    "imageId": "RiftWalk.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Katarina",
+    "key": "P",
+    "imageId": "Katarina_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Katarina",
+    "key": "Q",
+    "imageId": "KatarinaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Katarina",
+    "key": "W",
+    "imageId": "KatarinaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Katarina",
+    "key": "E",
+    "imageId": "KatarinaEWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Katarina",
+    "key": "R",
+    "imageId": "KatarinaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayle",
+    "key": "P",
+    "imageId": "Kayle_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kayle",
+    "key": "Q",
+    "imageId": "KayleQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayle",
+    "key": "W",
+    "imageId": "KayleW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayle",
+    "key": "E",
+    "imageId": "KayleE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayle",
+    "key": "R",
+    "imageId": "KayleR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayn",
+    "key": "P",
+    "imageId": "Kayn_Passive_Primary.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kayn",
+    "key": "Q",
+    "imageId": "KaynQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayn",
+    "key": "W",
+    "imageId": "KaynW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayn",
+    "key": "E",
+    "imageId": "KaynE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kayn",
+    "key": "R",
+    "imageId": "KaynR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kennen",
+    "key": "P",
+    "imageId": "Kennen_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kennen",
+    "key": "Q",
+    "imageId": "KennenShurikenHurlMissile1.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kennen",
+    "key": "W",
+    "imageId": "KennenBringTheLight.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kennen",
+    "key": "E",
+    "imageId": "KennenLightningRush.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kennen",
+    "key": "R",
+    "imageId": "KennenShurikenStorm.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Khazix",
+    "key": "P",
+    "imageId": "Khazix_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Khazix",
+    "key": "Q",
+    "imageId": "KhazixQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Khazix",
+    "key": "W",
+    "imageId": "KhazixW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Khazix",
+    "key": "E",
+    "imageId": "KhazixE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Khazix",
+    "key": "R",
+    "imageId": "KhazixR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kindred",
+    "key": "P",
+    "imageId": "Kindred_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kindred",
+    "key": "Q",
+    "imageId": "KindredQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kindred",
+    "key": "W",
+    "imageId": "KindredW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kindred",
+    "key": "E",
+    "imageId": "KindredEWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kindred",
+    "key": "R",
+    "imageId": "KindredR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kled",
+    "key": "P",
+    "imageId": "Kled_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Kled",
+    "key": "Q",
+    "imageId": "KledQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kled",
+    "key": "W",
+    "imageId": "KledW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kled",
+    "key": "E",
+    "imageId": "KledE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Kled",
+    "key": "R",
+    "imageId": "KledR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KogMaw",
+    "key": "P",
+    "imageId": "KogMaw_IcathianSurprise.png",
+    "type": "passive"
+  },
+  {
+    "champion": "KogMaw",
+    "key": "Q",
+    "imageId": "KogMawQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KogMaw",
+    "key": "W",
+    "imageId": "KogMawBioArcaneBarrage.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KogMaw",
+    "key": "E",
+    "imageId": "KogMawVoidOoze.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KogMaw",
+    "key": "R",
+    "imageId": "KogMawLivingArtillery.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KSante",
+    "key": "P",
+    "imageId": "Icons_KSante_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "KSante",
+    "key": "Q",
+    "imageId": "KSanteQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KSante",
+    "key": "W",
+    "imageId": "KSanteW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KSante",
+    "key": "E",
+    "imageId": "KSanteE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "KSante",
+    "key": "R",
+    "imageId": "KSanteR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leblanc",
+    "key": "P",
+    "imageId": "LeBlancP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Leblanc",
+    "key": "Q",
+    "imageId": "LeblancQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leblanc",
+    "key": "W",
+    "imageId": "LeblancW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leblanc",
+    "key": "E",
+    "imageId": "LeblancE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leblanc",
+    "key": "R",
+    "imageId": "LeblancR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "LeeSin",
+    "key": "P",
+    "imageId": "LeeSinPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "LeeSin",
+    "key": "Q",
+    "imageId": "LeeSinQOne.png",
+    "type": "spell"
+  },
+  {
+    "champion": "LeeSin",
+    "key": "W",
+    "imageId": "LeeSinWOne.png",
+    "type": "spell"
+  },
+  {
+    "champion": "LeeSin",
+    "key": "E",
+    "imageId": "LeeSinEOne.png",
+    "type": "spell"
+  },
+  {
+    "champion": "LeeSin",
+    "key": "R",
+    "imageId": "LeeSinR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leona",
+    "key": "P",
+    "imageId": "LeonaSunlight.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Leona",
+    "key": "Q",
+    "imageId": "LeonaShieldOfDaybreak.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leona",
+    "key": "W",
+    "imageId": "LeonaSolarBarrier.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leona",
+    "key": "E",
+    "imageId": "LeonaZenithBlade.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Leona",
+    "key": "R",
+    "imageId": "LeonaSolarFlare.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lillia",
+    "key": "P",
+    "imageId": "Lillia_Icon_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Lillia",
+    "key": "Q",
+    "imageId": "LilliaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lillia",
+    "key": "W",
+    "imageId": "LilliaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lillia",
+    "key": "E",
+    "imageId": "LilliaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lillia",
+    "key": "R",
+    "imageId": "LilliaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lissandra",
+    "key": "P",
+    "imageId": "Lissandra_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Lissandra",
+    "key": "Q",
+    "imageId": "LissandraQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lissandra",
+    "key": "W",
+    "imageId": "LissandraW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lissandra",
+    "key": "E",
+    "imageId": "LissandraE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lissandra",
+    "key": "R",
+    "imageId": "LissandraR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lucian",
+    "key": "P",
+    "imageId": "Lucian_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Lucian",
+    "key": "Q",
+    "imageId": "LucianQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lucian",
+    "key": "W",
+    "imageId": "LucianW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lucian",
+    "key": "E",
+    "imageId": "LucianE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lucian",
+    "key": "R",
+    "imageId": "LucianR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lulu",
+    "key": "P",
+    "imageId": "Lulu_PixFaerieCompanion.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Lulu",
+    "key": "Q",
+    "imageId": "LuluQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lulu",
+    "key": "W",
+    "imageId": "LuluW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lulu",
+    "key": "E",
+    "imageId": "LuluE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lulu",
+    "key": "R",
+    "imageId": "LuluR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lux",
+    "key": "P",
+    "imageId": "LuxIlluminatingFraulein.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Lux",
+    "key": "Q",
+    "imageId": "LuxLightBinding.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lux",
+    "key": "W",
+    "imageId": "LuxPrismaticWave.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lux",
+    "key": "E",
+    "imageId": "LuxLightStrikeKugel.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Lux",
+    "key": "R",
+    "imageId": "LuxR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malphite",
+    "key": "P",
+    "imageId": "Malphite_GraniteShield.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Malphite",
+    "key": "Q",
+    "imageId": "SeismicShard.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malphite",
+    "key": "W",
+    "imageId": "Obduracy.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malphite",
+    "key": "E",
+    "imageId": "Landslide.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malphite",
+    "key": "R",
+    "imageId": "UFSlash.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malzahar",
+    "key": "P",
+    "imageId": "Malzahar_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Malzahar",
+    "key": "Q",
+    "imageId": "MalzaharQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malzahar",
+    "key": "W",
+    "imageId": "MalzaharW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malzahar",
+    "key": "E",
+    "imageId": "MalzaharE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Malzahar",
+    "key": "R",
+    "imageId": "MalzaharR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Maokai",
+    "key": "P",
+    "imageId": "Maokai_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Maokai",
+    "key": "Q",
+    "imageId": "MaokaiQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Maokai",
+    "key": "W",
+    "imageId": "MaokaiW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Maokai",
+    "key": "E",
+    "imageId": "MaokaiE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Maokai",
+    "key": "R",
+    "imageId": "MaokaiR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MasterYi",
+    "key": "P",
+    "imageId": "MasterYi_Passive1.png",
+    "type": "passive"
+  },
+  {
+    "champion": "MasterYi",
+    "key": "Q",
+    "imageId": "AlphaStrike.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MasterYi",
+    "key": "W",
+    "imageId": "Meditate.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MasterYi",
+    "key": "E",
+    "imageId": "WujuStyle.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MasterYi",
+    "key": "R",
+    "imageId": "Highlander.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Milio",
+    "key": "P",
+    "imageId": "Milio_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Milio",
+    "key": "Q",
+    "imageId": "MilioQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Milio",
+    "key": "W",
+    "imageId": "MilioW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Milio",
+    "key": "E",
+    "imageId": "MilioE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Milio",
+    "key": "R",
+    "imageId": "MilioR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MissFortune",
+    "key": "P",
+    "imageId": "MissFortune_W.png",
+    "type": "passive"
+  },
+  {
+    "champion": "MissFortune",
+    "key": "Q",
+    "imageId": "MissFortuneRicochetShot.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MissFortune",
+    "key": "W",
+    "imageId": "MissFortuneViciousStrikes.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MissFortune",
+    "key": "E",
+    "imageId": "MissFortuneScattershot.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MissFortune",
+    "key": "R",
+    "imageId": "MissFortuneBulletTime.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MonkeyKing",
+    "key": "P",
+    "imageId": "MonkeyKingStoneSkin.png",
+    "type": "passive"
+  },
+  {
+    "champion": "MonkeyKing",
+    "key": "Q",
+    "imageId": "MonkeyKingDoubleAttack.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MonkeyKing",
+    "key": "W",
+    "imageId": "MonkeyKingDecoy.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MonkeyKing",
+    "key": "E",
+    "imageId": "MonkeyKingNimbus.png",
+    "type": "spell"
+  },
+  {
+    "champion": "MonkeyKing",
+    "key": "R",
+    "imageId": "MonkeyKingSpinToWin.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Mordekaiser",
+    "key": "P",
+    "imageId": "MordekaiserPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Mordekaiser",
+    "key": "Q",
+    "imageId": "MordekaiserQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Mordekaiser",
+    "key": "W",
+    "imageId": "MordekaiserW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Mordekaiser",
+    "key": "E",
+    "imageId": "MordekaiserE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Mordekaiser",
+    "key": "R",
+    "imageId": "MordekaiserR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Morgana",
+    "key": "P",
+    "imageId": "FallenAngel_Empathize.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Morgana",
+    "key": "Q",
+    "imageId": "MorganaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Morgana",
+    "key": "W",
+    "imageId": "MorganaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Morgana",
+    "key": "E",
+    "imageId": "MorganaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Morgana",
+    "key": "R",
+    "imageId": "MorganaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Naafiri",
+    "key": "P",
+    "imageId": "Icons_Naafiri_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Naafiri",
+    "key": "Q",
+    "imageId": "NaafiriQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Naafiri",
+    "key": "W",
+    "imageId": "NaafiriW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Naafiri",
+    "key": "E",
+    "imageId": "NaafiriE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Naafiri",
+    "key": "R",
+    "imageId": "NaafiriR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nami",
+    "key": "P",
+    "imageId": "NamiPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nami",
+    "key": "Q",
+    "imageId": "NamiQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nami",
+    "key": "W",
+    "imageId": "NamiW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nami",
+    "key": "E",
+    "imageId": "NamiE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nami",
+    "key": "R",
+    "imageId": "NamiR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nasus",
+    "key": "P",
+    "imageId": "Nasus_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nasus",
+    "key": "Q",
+    "imageId": "NasusQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nasus",
+    "key": "W",
+    "imageId": "NasusW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nasus",
+    "key": "E",
+    "imageId": "NasusE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nasus",
+    "key": "R",
+    "imageId": "NasusR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nautilus",
+    "key": "P",
+    "imageId": "Nautilus_StaggeringBlow.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nautilus",
+    "key": "Q",
+    "imageId": "NautilusAnchorDrag.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nautilus",
+    "key": "W",
+    "imageId": "NautilusPiercingGaze.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nautilus",
+    "key": "E",
+    "imageId": "NautilusSplashZone.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nautilus",
+    "key": "R",
+    "imageId": "NautilusGrandLine.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Neeko",
+    "key": "P",
+    "imageId": "Neeko_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Neeko",
+    "key": "Q",
+    "imageId": "NeekoQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Neeko",
+    "key": "W",
+    "imageId": "NeekoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Neeko",
+    "key": "E",
+    "imageId": "NeekoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Neeko",
+    "key": "R",
+    "imageId": "NeekoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nidalee",
+    "key": "P",
+    "imageId": "Nidalee_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nidalee",
+    "key": "Q",
+    "imageId": "JavelinToss.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nidalee",
+    "key": "W",
+    "imageId": "Bushwhack.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nidalee",
+    "key": "E",
+    "imageId": "PrimalSurge.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nidalee",
+    "key": "R",
+    "imageId": "AspectOfTheCougar.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nilah",
+    "key": "P",
+    "imageId": "NIlahP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nilah",
+    "key": "Q",
+    "imageId": "NilahQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nilah",
+    "key": "W",
+    "imageId": "NilahW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nilah",
+    "key": "E",
+    "imageId": "NilahE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nilah",
+    "key": "R",
+    "imageId": "NilahR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nocturne",
+    "key": "P",
+    "imageId": "Nocturne_UmbraBlades.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nocturne",
+    "key": "Q",
+    "imageId": "NocturneDuskbringer.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nocturne",
+    "key": "W",
+    "imageId": "NocturneShroudofDarkness.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nocturne",
+    "key": "E",
+    "imageId": "NocturneUnspeakableHorror.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nocturne",
+    "key": "R",
+    "imageId": "NocturneParanoia.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nunu",
+    "key": "P",
+    "imageId": "NunuPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Nunu",
+    "key": "Q",
+    "imageId": "NunuQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nunu",
+    "key": "W",
+    "imageId": "NunuW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nunu",
+    "key": "E",
+    "imageId": "NunuE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Nunu",
+    "key": "R",
+    "imageId": "NunuR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Olaf",
+    "key": "P",
+    "imageId": "Olaf_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Olaf",
+    "key": "Q",
+    "imageId": "OlafAxeThrowCast.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Olaf",
+    "key": "W",
+    "imageId": "OlafFrenziedStrikes.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Olaf",
+    "key": "E",
+    "imageId": "OlafRecklessStrike.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Olaf",
+    "key": "R",
+    "imageId": "OlafRagnarok.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Orianna",
+    "key": "P",
+    "imageId": "OriannaPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Orianna",
+    "key": "Q",
+    "imageId": "OrianaIzunaCommand.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Orianna",
+    "key": "W",
+    "imageId": "OrianaDissonanceCommand.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Orianna",
+    "key": "E",
+    "imageId": "OrianaRedactCommand.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Orianna",
+    "key": "R",
+    "imageId": "OrianaDetonateCommand.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ornn",
+    "key": "P",
+    "imageId": "OrnnP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ornn",
+    "key": "Q",
+    "imageId": "OrnnQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ornn",
+    "key": "W",
+    "imageId": "OrnnW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ornn",
+    "key": "E",
+    "imageId": "OrnnE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ornn",
+    "key": "R",
+    "imageId": "OrnnR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pantheon",
+    "key": "P",
+    "imageId": "Pantheon_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Pantheon",
+    "key": "Q",
+    "imageId": "PantheonQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pantheon",
+    "key": "W",
+    "imageId": "PantheonW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pantheon",
+    "key": "E",
+    "imageId": "PantheonE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pantheon",
+    "key": "R",
+    "imageId": "PantheonR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Poppy",
+    "key": "P",
+    "imageId": "Poppy_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Poppy",
+    "key": "Q",
+    "imageId": "PoppyQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Poppy",
+    "key": "W",
+    "imageId": "PoppyW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Poppy",
+    "key": "E",
+    "imageId": "PoppyE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Poppy",
+    "key": "R",
+    "imageId": "PoppyR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pyke",
+    "key": "P",
+    "imageId": "PykePassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Pyke",
+    "key": "Q",
+    "imageId": "PykeQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pyke",
+    "key": "W",
+    "imageId": "PykeW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pyke",
+    "key": "E",
+    "imageId": "PykeE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Pyke",
+    "key": "R",
+    "imageId": "PykeR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Qiyana",
+    "key": "P",
+    "imageId": "Qiyana_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Qiyana",
+    "key": "Q",
+    "imageId": "QiyanaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Qiyana",
+    "key": "W",
+    "imageId": "QiyanaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Qiyana",
+    "key": "E",
+    "imageId": "QiyanaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Qiyana",
+    "key": "R",
+    "imageId": "QiyanaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Quinn",
+    "key": "P",
+    "imageId": "Quinn_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Quinn",
+    "key": "Q",
+    "imageId": "QuinnQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Quinn",
+    "key": "W",
+    "imageId": "QuinnW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Quinn",
+    "key": "E",
+    "imageId": "QuinnE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Quinn",
+    "key": "R",
+    "imageId": "QuinnR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rakan",
+    "key": "P",
+    "imageId": "Rakan_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Rakan",
+    "key": "Q",
+    "imageId": "RakanQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rakan",
+    "key": "W",
+    "imageId": "RakanW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rakan",
+    "key": "E",
+    "imageId": "RakanE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rakan",
+    "key": "R",
+    "imageId": "RakanR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rammus",
+    "key": "P",
+    "imageId": "Armordillo_ScavengeArmor.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Rammus",
+    "key": "Q",
+    "imageId": "PowerBall.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rammus",
+    "key": "W",
+    "imageId": "DefensiveBallCurl.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rammus",
+    "key": "E",
+    "imageId": "PuncturingTaunt.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rammus",
+    "key": "R",
+    "imageId": "Tremors2.png",
+    "type": "spell"
+  },
+  {
+    "champion": "RekSai",
+    "key": "P",
+    "imageId": "RekSai_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "RekSai",
+    "key": "Q",
+    "imageId": "RekSaiQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "RekSai",
+    "key": "W",
+    "imageId": "RekSaiW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "RekSai",
+    "key": "E",
+    "imageId": "RekSaiE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "RekSai",
+    "key": "R",
+    "imageId": "RekSaiR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rell",
+    "key": "P",
+    "imageId": "RellP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Rell",
+    "key": "Q",
+    "imageId": "RellQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rell",
+    "key": "W",
+    "imageId": "RellW_Dismount.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rell",
+    "key": "E",
+    "imageId": "RellE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rell",
+    "key": "R",
+    "imageId": "RellR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renata",
+    "key": "P",
+    "imageId": "Renata_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Renata",
+    "key": "Q",
+    "imageId": "RenataQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renata",
+    "key": "W",
+    "imageId": "RenataW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renata",
+    "key": "E",
+    "imageId": "RenataE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renata",
+    "key": "R",
+    "imageId": "RenataR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renekton",
+    "key": "P",
+    "imageId": "Renekton_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Renekton",
+    "key": "Q",
+    "imageId": "RenektonCleave.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renekton",
+    "key": "W",
+    "imageId": "RenektonPreExecute.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renekton",
+    "key": "E",
+    "imageId": "RenektonSliceAndDice.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Renekton",
+    "key": "R",
+    "imageId": "RenektonReignOfTheTyrant.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rengar",
+    "key": "P",
+    "imageId": "Rengar_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Rengar",
+    "key": "Q",
+    "imageId": "RengarQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rengar",
+    "key": "W",
+    "imageId": "RengarW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rengar",
+    "key": "E",
+    "imageId": "RengarE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rengar",
+    "key": "R",
+    "imageId": "RengarR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Riven",
+    "key": "P",
+    "imageId": "RivenRunicBlades.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Riven",
+    "key": "Q",
+    "imageId": "RivenTriCleave.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Riven",
+    "key": "W",
+    "imageId": "RivenMartyr.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Riven",
+    "key": "E",
+    "imageId": "RivenFeint.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Riven",
+    "key": "R",
+    "imageId": "RivenFengShuiEngine.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rumble",
+    "key": "P",
+    "imageId": "Rumble_JunkyardTitan1.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Rumble",
+    "key": "Q",
+    "imageId": "RumbleFlameThrower.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rumble",
+    "key": "W",
+    "imageId": "RumbleShield.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rumble",
+    "key": "E",
+    "imageId": "RumbleGrenade.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Rumble",
+    "key": "R",
+    "imageId": "RumbleCarpetBomb.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ryze",
+    "key": "P",
+    "imageId": "Ryze_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ryze",
+    "key": "Q",
+    "imageId": "RyzeQWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ryze",
+    "key": "W",
+    "imageId": "RyzeW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ryze",
+    "key": "E",
+    "imageId": "RyzeE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ryze",
+    "key": "R",
+    "imageId": "RyzeR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Samira",
+    "key": "P",
+    "imageId": "SamiraP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Samira",
+    "key": "Q",
+    "imageId": "SamiraQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Samira",
+    "key": "W",
+    "imageId": "SamiraW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Samira",
+    "key": "E",
+    "imageId": "SamiraE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Samira",
+    "key": "R",
+    "imageId": "SamiraR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sejuani",
+    "key": "P",
+    "imageId": "Sejuani_passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Sejuani",
+    "key": "Q",
+    "imageId": "SejuaniQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sejuani",
+    "key": "W",
+    "imageId": "SejuaniW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sejuani",
+    "key": "E",
+    "imageId": "SejuaniE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sejuani",
+    "key": "R",
+    "imageId": "SejuaniR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Senna",
+    "key": "P",
+    "imageId": "Senna_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Senna",
+    "key": "Q",
+    "imageId": "SennaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Senna",
+    "key": "W",
+    "imageId": "SennaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Senna",
+    "key": "E",
+    "imageId": "SennaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Senna",
+    "key": "R",
+    "imageId": "SennaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Seraphine",
+    "key": "P",
+    "imageId": "Seraphine_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Seraphine",
+    "key": "Q",
+    "imageId": "SeraphineQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Seraphine",
+    "key": "W",
+    "imageId": "SeraphineW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Seraphine",
+    "key": "E",
+    "imageId": "SeraphineE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Seraphine",
+    "key": "R",
+    "imageId": "SeraphineR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sett",
+    "key": "P",
+    "imageId": "Sett_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Sett",
+    "key": "Q",
+    "imageId": "SettQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sett",
+    "key": "W",
+    "imageId": "SettW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sett",
+    "key": "E",
+    "imageId": "SettE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sett",
+    "key": "R",
+    "imageId": "SettR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shaco",
+    "key": "P",
+    "imageId": "Jester_CarefulStrikes.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Shaco",
+    "key": "Q",
+    "imageId": "Deceive.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shaco",
+    "key": "W",
+    "imageId": "JackInTheBox.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shaco",
+    "key": "E",
+    "imageId": "TwoShivPoison.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shaco",
+    "key": "R",
+    "imageId": "HallucinateFull.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shen",
+    "key": "P",
+    "imageId": "Shen_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Shen",
+    "key": "Q",
+    "imageId": "ShenQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shen",
+    "key": "W",
+    "imageId": "ShenW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shen",
+    "key": "E",
+    "imageId": "ShenE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shen",
+    "key": "R",
+    "imageId": "ShenR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shyvana",
+    "key": "P",
+    "imageId": "ShyvanaReinforcedScales.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Shyvana",
+    "key": "Q",
+    "imageId": "ShyvanaDoubleAttack.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shyvana",
+    "key": "W",
+    "imageId": "ShyvanaImmolationAura.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shyvana",
+    "key": "E",
+    "imageId": "ShyvanaFireball.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Shyvana",
+    "key": "R",
+    "imageId": "ShyvanaTransformCast.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Singed",
+    "key": "P",
+    "imageId": "Singed_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Singed",
+    "key": "Q",
+    "imageId": "PoisonTrail.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Singed",
+    "key": "W",
+    "imageId": "MegaAdhesive.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Singed",
+    "key": "E",
+    "imageId": "Fling.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Singed",
+    "key": "R",
+    "imageId": "InsanityPotion.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sion",
+    "key": "P",
+    "imageId": "Sion_Passive1.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Sion",
+    "key": "Q",
+    "imageId": "SionQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sion",
+    "key": "W",
+    "imageId": "SionW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sion",
+    "key": "E",
+    "imageId": "SionE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sion",
+    "key": "R",
+    "imageId": "SionR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sivir",
+    "key": "P",
+    "imageId": "Sivir_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Sivir",
+    "key": "Q",
+    "imageId": "SivirQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sivir",
+    "key": "W",
+    "imageId": "SivirW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sivir",
+    "key": "E",
+    "imageId": "SivirE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sivir",
+    "key": "R",
+    "imageId": "SivirR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Skarner",
+    "key": "P",
+    "imageId": "Skarner_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Skarner",
+    "key": "Q",
+    "imageId": "SkarnerQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Skarner",
+    "key": "W",
+    "imageId": "SkarnerW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Skarner",
+    "key": "E",
+    "imageId": "SkarnerE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Skarner",
+    "key": "R",
+    "imageId": "SkarnerR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Smolder",
+    "key": "P",
+    "imageId": "Icons_Smolder_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Smolder",
+    "key": "Q",
+    "imageId": "SmolderQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Smolder",
+    "key": "W",
+    "imageId": "SmolderW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Smolder",
+    "key": "E",
+    "imageId": "SmolderE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Smolder",
+    "key": "R",
+    "imageId": "SmolderR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sona",
+    "key": "P",
+    "imageId": "Sona_Passive_Charged.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Sona",
+    "key": "Q",
+    "imageId": "SonaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sona",
+    "key": "W",
+    "imageId": "SonaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sona",
+    "key": "E",
+    "imageId": "SonaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sona",
+    "key": "R",
+    "imageId": "SonaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Soraka",
+    "key": "P",
+    "imageId": "Soraka_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Soraka",
+    "key": "Q",
+    "imageId": "SorakaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Soraka",
+    "key": "W",
+    "imageId": "SorakaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Soraka",
+    "key": "E",
+    "imageId": "SorakaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Soraka",
+    "key": "R",
+    "imageId": "SorakaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Swain",
+    "key": "P",
+    "imageId": "Swain_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Swain",
+    "key": "Q",
+    "imageId": "SwainQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Swain",
+    "key": "W",
+    "imageId": "SwainW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Swain",
+    "key": "E",
+    "imageId": "SwainE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Swain",
+    "key": "R",
+    "imageId": "SwainR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sylas",
+    "key": "P",
+    "imageId": "SylasP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Sylas",
+    "key": "Q",
+    "imageId": "SylasQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sylas",
+    "key": "W",
+    "imageId": "SylasW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sylas",
+    "key": "E",
+    "imageId": "SylasE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Sylas",
+    "key": "R",
+    "imageId": "SylasR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Syndra",
+    "key": "P",
+    "imageId": "SyndraPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Syndra",
+    "key": "Q",
+    "imageId": "SyndraQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Syndra",
+    "key": "W",
+    "imageId": "SyndraW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Syndra",
+    "key": "E",
+    "imageId": "SyndraE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Syndra",
+    "key": "R",
+    "imageId": "SyndraR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TahmKench",
+    "key": "P",
+    "imageId": "TahmKenchP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "TahmKench",
+    "key": "Q",
+    "imageId": "TahmKenchQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TahmKench",
+    "key": "W",
+    "imageId": "TahmKenchW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TahmKench",
+    "key": "E",
+    "imageId": "TahmKenchE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TahmKench",
+    "key": "R",
+    "imageId": "TahmKenchRWrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taliyah",
+    "key": "P",
+    "imageId": "Taliyah_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Taliyah",
+    "key": "Q",
+    "imageId": "TaliyahQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taliyah",
+    "key": "W",
+    "imageId": "TaliyahWVC.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taliyah",
+    "key": "E",
+    "imageId": "TaliyahE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taliyah",
+    "key": "R",
+    "imageId": "TaliyahR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Talon",
+    "key": "P",
+    "imageId": "TalonP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Talon",
+    "key": "Q",
+    "imageId": "TalonQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Talon",
+    "key": "W",
+    "imageId": "TalonW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Talon",
+    "key": "E",
+    "imageId": "TalonE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Talon",
+    "key": "R",
+    "imageId": "TalonR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taric",
+    "key": "P",
+    "imageId": "Taric_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Taric",
+    "key": "Q",
+    "imageId": "TaricQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taric",
+    "key": "W",
+    "imageId": "TaricW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taric",
+    "key": "E",
+    "imageId": "TaricE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Taric",
+    "key": "R",
+    "imageId": "TaricR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Teemo",
+    "key": "P",
+    "imageId": "TeemoPassive.ASU_Teemo.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Teemo",
+    "key": "Q",
+    "imageId": "TeemoQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Teemo",
+    "key": "W",
+    "imageId": "TeemoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Teemo",
+    "key": "E",
+    "imageId": "TeemoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Teemo",
+    "key": "R",
+    "imageId": "TeemoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Thresh",
+    "key": "P",
+    "imageId": "Thresh_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Thresh",
+    "key": "Q",
+    "imageId": "ThreshQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Thresh",
+    "key": "W",
+    "imageId": "ThreshW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Thresh",
+    "key": "E",
+    "imageId": "ThreshE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Thresh",
+    "key": "R",
+    "imageId": "ThreshRPenta.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tristana",
+    "key": "P",
+    "imageId": "Tristana_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Tristana",
+    "key": "Q",
+    "imageId": "TristanaQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tristana",
+    "key": "W",
+    "imageId": "TristanaW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tristana",
+    "key": "E",
+    "imageId": "TristanaE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tristana",
+    "key": "R",
+    "imageId": "TristanaR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Trundle",
+    "key": "P",
+    "imageId": "Trundle_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Trundle",
+    "key": "Q",
+    "imageId": "TrundleTrollSmash.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Trundle",
+    "key": "W",
+    "imageId": "trundledesecrate.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Trundle",
+    "key": "E",
+    "imageId": "TrundleCircle.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Trundle",
+    "key": "R",
+    "imageId": "TrundlePain.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tryndamere",
+    "key": "P",
+    "imageId": "Tryndamere_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Tryndamere",
+    "key": "Q",
+    "imageId": "TryndamereQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tryndamere",
+    "key": "W",
+    "imageId": "TryndamereW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tryndamere",
+    "key": "E",
+    "imageId": "TryndamereE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Tryndamere",
+    "key": "R",
+    "imageId": "UndyingRage.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TwistedFate",
+    "key": "P",
+    "imageId": "Cardmaster_SealFate.png",
+    "type": "passive"
+  },
+  {
+    "champion": "TwistedFate",
+    "key": "Q",
+    "imageId": "WildCards.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TwistedFate",
+    "key": "W",
+    "imageId": "PickACard.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TwistedFate",
+    "key": "E",
+    "imageId": "CardmasterStack.png",
+    "type": "spell"
+  },
+  {
+    "champion": "TwistedFate",
+    "key": "R",
+    "imageId": "Destiny.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Twitch",
+    "key": "P",
+    "imageId": "Twitch_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Twitch",
+    "key": "Q",
+    "imageId": "TwitchHideInShadows.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Twitch",
+    "key": "W",
+    "imageId": "TwitchVenomCask.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Twitch",
+    "key": "E",
+    "imageId": "TwitchExpunge.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Twitch",
+    "key": "R",
+    "imageId": "TwitchFullAutomatic.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Udyr",
+    "key": "P",
+    "imageId": "Udyr_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Udyr",
+    "key": "Q",
+    "imageId": "UdyrQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Udyr",
+    "key": "W",
+    "imageId": "UdyrW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Udyr",
+    "key": "E",
+    "imageId": "UdyrE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Udyr",
+    "key": "R",
+    "imageId": "UdyrR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Urgot",
+    "key": "P",
+    "imageId": "Urgot_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Urgot",
+    "key": "Q",
+    "imageId": "UrgotQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Urgot",
+    "key": "W",
+    "imageId": "UrgotW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Urgot",
+    "key": "E",
+    "imageId": "UrgotE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Urgot",
+    "key": "R",
+    "imageId": "UrgotR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Varus",
+    "key": "P",
+    "imageId": "VarusPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Varus",
+    "key": "Q",
+    "imageId": "VarusQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Varus",
+    "key": "W",
+    "imageId": "VarusW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Varus",
+    "key": "E",
+    "imageId": "VarusE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Varus",
+    "key": "R",
+    "imageId": "VarusR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vayne",
+    "key": "P",
+    "imageId": "Vayne_NightHunter.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Vayne",
+    "key": "Q",
+    "imageId": "VayneTumble.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vayne",
+    "key": "W",
+    "imageId": "VayneSilveredBolts.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vayne",
+    "key": "E",
+    "imageId": "VayneCondemn.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vayne",
+    "key": "R",
+    "imageId": "VayneInquisition.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Veigar",
+    "key": "P",
+    "imageId": "VeigarEntropy.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Veigar",
+    "key": "Q",
+    "imageId": "VeigarBalefulStrike.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Veigar",
+    "key": "W",
+    "imageId": "VeigarDarkMatter.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Veigar",
+    "key": "E",
+    "imageId": "VeigarEventHorizon.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Veigar",
+    "key": "R",
+    "imageId": "VeigarR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Velkoz",
+    "key": "P",
+    "imageId": "VelKoz_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Velkoz",
+    "key": "Q",
+    "imageId": "VelkozQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Velkoz",
+    "key": "W",
+    "imageId": "VelkozW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Velkoz",
+    "key": "E",
+    "imageId": "VelkozE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Velkoz",
+    "key": "R",
+    "imageId": "VelkozR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vex",
+    "key": "P",
+    "imageId": "Icons_Vex_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Vex",
+    "key": "Q",
+    "imageId": "VexQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vex",
+    "key": "W",
+    "imageId": "VexW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vex",
+    "key": "E",
+    "imageId": "VexE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vex",
+    "key": "R",
+    "imageId": "VexR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vi",
+    "key": "P",
+    "imageId": "ViPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Vi",
+    "key": "Q",
+    "imageId": "ViQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vi",
+    "key": "W",
+    "imageId": "ViW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vi",
+    "key": "E",
+    "imageId": "ViE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vi",
+    "key": "R",
+    "imageId": "ViR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viego",
+    "key": "P",
+    "imageId": "Viego_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Viego",
+    "key": "Q",
+    "imageId": "ViegoQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viego",
+    "key": "W",
+    "imageId": "ViegoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viego",
+    "key": "E",
+    "imageId": "ViegoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viego",
+    "key": "R",
+    "imageId": "ViegoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viktor",
+    "key": "P",
+    "imageId": "Viktor_Passive.ViktorVGU.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Viktor",
+    "key": "Q",
+    "imageId": "ViktorQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viktor",
+    "key": "W",
+    "imageId": "ViktorW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viktor",
+    "key": "E",
+    "imageId": "ViktorE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Viktor",
+    "key": "R",
+    "imageId": "ViktorR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vladimir",
+    "key": "P",
+    "imageId": "VladimirP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Vladimir",
+    "key": "Q",
+    "imageId": "VladimirQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vladimir",
+    "key": "W",
+    "imageId": "VladimirSanguinePool.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vladimir",
+    "key": "E",
+    "imageId": "VladimirE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Vladimir",
+    "key": "R",
+    "imageId": "VladimirHemoplague.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Volibear",
+    "key": "P",
+    "imageId": "Volibear_Icon_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Volibear",
+    "key": "Q",
+    "imageId": "VolibearQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Volibear",
+    "key": "W",
+    "imageId": "VolibearW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Volibear",
+    "key": "E",
+    "imageId": "VolibearE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Volibear",
+    "key": "R",
+    "imageId": "VolibearR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Warwick",
+    "key": "P",
+    "imageId": "WarwickP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Warwick",
+    "key": "Q",
+    "imageId": "WarwickQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Warwick",
+    "key": "W",
+    "imageId": "WarwickW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Warwick",
+    "key": "E",
+    "imageId": "WarwickE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Warwick",
+    "key": "R",
+    "imageId": "WarwickR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xayah",
+    "key": "P",
+    "imageId": "XayahPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Xayah",
+    "key": "Q",
+    "imageId": "XayahQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xayah",
+    "key": "W",
+    "imageId": "XayahW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xayah",
+    "key": "E",
+    "imageId": "XayahE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xayah",
+    "key": "R",
+    "imageId": "XayahR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xerath",
+    "key": "P",
+    "imageId": "Xerath_Passive1.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Xerath",
+    "key": "Q",
+    "imageId": "XerathArcanopulseChargeUp.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xerath",
+    "key": "W",
+    "imageId": "XerathArcaneBarrage2.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xerath",
+    "key": "E",
+    "imageId": "XerathMageSpear.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Xerath",
+    "key": "R",
+    "imageId": "XerathLocusOfPower2.png",
+    "type": "spell"
+  },
+  {
+    "champion": "XinZhao",
+    "key": "P",
+    "imageId": "XinZhaoP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "XinZhao",
+    "key": "Q",
+    "imageId": "XinZhaoQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "XinZhao",
+    "key": "W",
+    "imageId": "XinZhaoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "XinZhao",
+    "key": "E",
+    "imageId": "XinZhaoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "XinZhao",
+    "key": "R",
+    "imageId": "XinZhaoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yasuo",
+    "key": "P",
+    "imageId": "Yasuo_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Yasuo",
+    "key": "Q",
+    "imageId": "YasuoQ1Wrapper.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yasuo",
+    "key": "W",
+    "imageId": "YasuoW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yasuo",
+    "key": "E",
+    "imageId": "YasuoE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yasuo",
+    "key": "R",
+    "imageId": "YasuoR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yone",
+    "key": "P",
+    "imageId": "YonePassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Yone",
+    "key": "Q",
+    "imageId": "YoneQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yone",
+    "key": "W",
+    "imageId": "YoneW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yone",
+    "key": "E",
+    "imageId": "YoneE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yone",
+    "key": "R",
+    "imageId": "YoneR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yorick",
+    "key": "P",
+    "imageId": "Yorick_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Yorick",
+    "key": "Q",
+    "imageId": "YorickQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yorick",
+    "key": "W",
+    "imageId": "YorickW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yorick",
+    "key": "E",
+    "imageId": "YorickE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yorick",
+    "key": "R",
+    "imageId": "YorickR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yuumi",
+    "key": "P",
+    "imageId": "YuumiP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Yuumi",
+    "key": "Q",
+    "imageId": "YuumiQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yuumi",
+    "key": "W",
+    "imageId": "YuumiW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yuumi",
+    "key": "E",
+    "imageId": "YuumiE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Yuumi",
+    "key": "R",
+    "imageId": "YuumiR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zac",
+    "key": "P",
+    "imageId": "ZacPassive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Zac",
+    "key": "Q",
+    "imageId": "ZacQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zac",
+    "key": "W",
+    "imageId": "ZacW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zac",
+    "key": "E",
+    "imageId": "ZacE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zac",
+    "key": "R",
+    "imageId": "ZacR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zed",
+    "key": "P",
+    "imageId": "ZedP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Zed",
+    "key": "Q",
+    "imageId": "ZedQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zed",
+    "key": "W",
+    "imageId": "ZedW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zed",
+    "key": "E",
+    "imageId": "ZedE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zed",
+    "key": "R",
+    "imageId": "ZedR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zeri",
+    "key": "P",
+    "imageId": "ZeriP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Zeri",
+    "key": "Q",
+    "imageId": "ZeriQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zeri",
+    "key": "W",
+    "imageId": "ZeriW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zeri",
+    "key": "E",
+    "imageId": "ZeriE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zeri",
+    "key": "R",
+    "imageId": "ZeriR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ziggs",
+    "key": "P",
+    "imageId": "ZiggsPassiveReady.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Ziggs",
+    "key": "Q",
+    "imageId": "ZiggsQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ziggs",
+    "key": "W",
+    "imageId": "ZiggsW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ziggs",
+    "key": "E",
+    "imageId": "ZiggsE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Ziggs",
+    "key": "R",
+    "imageId": "ZiggsR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zilean",
+    "key": "P",
+    "imageId": "Zilean_Passive.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Zilean",
+    "key": "Q",
+    "imageId": "ZileanQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zilean",
+    "key": "W",
+    "imageId": "ZileanW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zilean",
+    "key": "E",
+    "imageId": "TimeWarp.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zilean",
+    "key": "R",
+    "imageId": "ChronoShift.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zoe",
+    "key": "P",
+    "imageId": "Zoe_P.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Zoe",
+    "key": "Q",
+    "imageId": "ZoeQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zoe",
+    "key": "W",
+    "imageId": "ZoeW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zoe",
+    "key": "E",
+    "imageId": "ZoeE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zoe",
+    "key": "R",
+    "imageId": "ZoeR.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zyra",
+    "key": "P",
+    "imageId": "ZyraP.png",
+    "type": "passive"
+  },
+  {
+    "champion": "Zyra",
+    "key": "Q",
+    "imageId": "ZyraQ.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zyra",
+    "key": "W",
+    "imageId": "ZyraW.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zyra",
+    "key": "E",
+    "imageId": "ZyraE.png",
+    "type": "spell"
+  },
+  {
+    "champion": "Zyra",
+    "key": "R",
+    "imageId": "ZyraR.png",
+    "type": "spell"
+  }
+]

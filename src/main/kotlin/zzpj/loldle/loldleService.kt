@@ -13,8 +13,13 @@ class LoldleService(val project: Project) {
     var guesses by mutableStateOf(listOf<Champion>())
     var isVictory by mutableStateOf(false)
 
+    var randomSpell by mutableStateOf<Spell?>(null)
+    var spellGuesses by mutableStateOf(listOf<String>())
+    var isSpellVictory by mutableStateOf(false)
+
     init {
         startNewGame()
+        startNewSpellGame()
     }
 
     fun startNewGame() {
@@ -23,20 +28,41 @@ class LoldleService(val project: Project) {
             randomChampion = allChamps.random()
             guesses = emptyList()
             isVictory = false
-            println("Selected champion: ${randomChampion?.championName}")
+            println("Selected champion (Classic): ${randomChampion?.championName}")
         }
     }
 
     fun submitGuess(champion: Champion) {
         if (isVictory) return
 
-        // Zapobiegamy dodawaniu dwa razy tego samego
         if (!guesses.any { it.championName == champion.championName }) {
             guesses = guesses + champion
         }
 
         if (champion.championName.equals(randomChampion?.championName, ignoreCase = true)) {
             isVictory = true
+        }
+    }
+
+    fun startNewSpellGame() {
+        val allSpells = spellRepository.getSpells()
+        if (allSpells.isNotEmpty()) {
+            randomSpell = allSpells.random()
+            spellGuesses = emptyList()
+            isSpellVictory = false
+            println("Selected spell for (Spells): ${randomSpell?.champion}")
+        }
+    }
+
+    fun submitSpellGuess(championName: String) {
+        if (isSpellVictory) return
+
+        if (!spellGuesses.contains(championName)) {
+            spellGuesses = spellGuesses + championName
+        }
+
+        if (championName.equals(randomSpell?.champion, ignoreCase = true)) {
+            isSpellVictory = true
         }
     }
 }
