@@ -30,7 +30,7 @@ object spellRepository {
                 spells = Gson().fromJson(reader, listType)
                 println("Sukces: Załadowano ${spells.size} umiejętności!")
             } else {
-                println("Błąd: Nie znaleziono pliku spells.json!")
+                println("Błąd: Nie znaleziono pliku abilities.json!")
             }
         } catch (e: Exception) {
             e.printStackTrace()

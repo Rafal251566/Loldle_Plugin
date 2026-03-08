@@ -15,6 +15,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.ColorMatrix
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.loadImageBitmap
@@ -37,7 +39,7 @@ fun spellGameUI(service: LoldleService) {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        BigSpellImage(randomSpell)
+        BigSpellImage(spell = randomSpell, guessesCount = guesses.size)
 
         Spacer(modifier = Modifier.height(24.dp))
 
@@ -65,7 +67,7 @@ fun spellGameUI(service: LoldleService) {
 }
 
 @Composable
-fun BigSpellImage(spell: Spell) {
+fun BigSpellImage(spell: Spell, guessesCount: Int) {
     val folder = if (spell.type == "passive") "passive" else "spell"
     val url = "https://ddragon.leagueoflegends.com/cdn/16.5.1/img/$folder/${spell.imageId}"
 
@@ -79,6 +81,11 @@ fun BigSpellImage(spell: Spell) {
         } catch (e: Exception) {
             println("Błąd pobierania skilla z: $url")
         }
+    }
+
+    val showColor = guessesCount >= 3
+    val grayscaleFilter = remember {
+        ColorFilter.colorMatrix(ColorMatrix().apply { setToSaturation(0f) })
     }
 
     Box(
@@ -95,7 +102,8 @@ fun BigSpellImage(spell: Spell) {
                 bitmap = image!!,
                 contentDescription = "Tajemnicza umiejętność",
                 modifier = Modifier.fillMaxSize().clip(RoundedCornerShape(8.dp)),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop,
+                colorFilter = if (showColor) null else grayscaleFilter
             )
         } else {
             CircularProgressIndicator(color = Color(0xFFC8AA6E))
