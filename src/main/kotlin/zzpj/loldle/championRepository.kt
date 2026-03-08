@@ -22,7 +22,14 @@ data class Champion(
 )
 
 object championRepository {
-    var champions: List<Champion> = emptyList()
+    private var champions: List<Champion> = emptyList()
+
+    fun getChampions(): List<Champion> {
+        if (champions.isEmpty()) {
+            loadChampions()
+        }
+        return champions
+    }
 
     fun loadChampions() {
         try {
