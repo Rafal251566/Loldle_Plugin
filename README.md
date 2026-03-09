@@ -5,6 +5,8 @@ Legends. Jej głównym celem jest odgadywanie imion bohaterów gry na podstawie 
 
 ## Tryb zgadywania bohatera
 
+https://github.com/user-attachments/assets/a4cad0cc-6243-4839-9901-615d82eb91b4
+
 W tym trybie gracze otrzymują wskazówki dotyczące cech, umiejętności, roli lub innych charakterystycznych elementów
 bohatera. Na podstawie tych wskazówek muszą odgadnąć, o którego bohatera chodzi.
 
@@ -25,6 +27,8 @@ Rysunek 1. Trwająca gra zgadywania bohatera.
 Rysunek 2. Zwycięstwo w trybie zgadywania bohatera.
 
 ## Tryb zgadywania umiejętności bohatera
+
+https://github.com/user-attachments/assets/14e74392-cddb-492c-8a41-cc220eb03fc0
 
 W tym trybie gracze otrzymują zdjęcie umiejętności bohatera, a ich zadaniem jest odgadnięcie, do którego bohatera należy
 ta umiejętność.
