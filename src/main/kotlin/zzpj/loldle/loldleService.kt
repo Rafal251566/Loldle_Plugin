@@ -22,6 +22,8 @@ class LoldleService(val project: Project) {
         startNewSpellGame()
     }
 
+    private fun String.normalize(): String = this.replace(" ", "").replace("'", "").lowercase()
+
     fun startNewGame() {
         val allChamps = championRepository.getChampions()
         if (allChamps.isNotEmpty()) {
@@ -35,11 +37,11 @@ class LoldleService(val project: Project) {
     fun submitGuess(champion: Champion) {
         if (isVictory) return
 
-        if (!guesses.any { it.championName == champion.championName }) {
+        if (!guesses.any { it.championName.normalize() == champion.championName.normalize() }) {
             guesses = guesses + champion
         }
 
-        if (champion.championName.equals(randomChampion?.championName, ignoreCase = true)) {
+        if (champion.championName.normalize() == randomChampion?.championName?.normalize()) {
             isVictory = true
         }
     }
@@ -57,11 +59,11 @@ class LoldleService(val project: Project) {
     fun submitSpellGuess(championName: String) {
         if (isSpellVictory) return
 
-        if (!spellGuesses.contains(championName)) {
+        if (!spellGuesses.any { it.normalize() == championName.normalize() }) {
             spellGuesses = spellGuesses + championName
         }
 
-        if (championName.equals(randomSpell?.champion, ignoreCase = true)) {
+        if (championName.normalize() == randomSpell?.champion?.normalize()) {
             isSpellVictory = true
         }
     }

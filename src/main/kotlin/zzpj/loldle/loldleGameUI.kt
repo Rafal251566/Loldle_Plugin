@@ -7,7 +7,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.TooltipArea
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.res.loadImageBitmap
@@ -30,6 +29,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.net.URL
 import kotlin.math.abs
+
+private fun String.normalize(): String = this.replace(" ", "").replace("'", "").lowercase()
 
 @Composable
 fun loldleGameUI(service: LoldleService) {
@@ -176,8 +177,8 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
 
     val filtered = if (inputName.isBlank()) emptyList()
     else allChampions.filter {
-        it.championName.contains(inputName, ignoreCase = true) &&
-                !alreadyGuessed.any { g -> g.championName == it.championName }
+        it.championName.normalize().contains(inputName.normalize()) &&
+                !alreadyGuessed.any { g -> g.championName.normalize() == it.championName.normalize() }
     }.take(5)
 
     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -199,7 +200,8 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
             ) {
                 filtered.forEach { champ ->
                     DropdownMenuItem(onClick = {
-                        inputName = champ.championName
+                        onGuess(champ)
+                        inputName = ""
                         isMenuExpanded = false
                     }) { Text(champ.championName) }
                 }
@@ -208,7 +210,7 @@ fun autocompleteSearchComponent(allChampions: List<Champion>, alreadyGuessed: Li
         Spacer(modifier = Modifier.width(8.dp))
         Button(
             onClick = {
-                val found = allChampions.find { it.championName.equals(inputName, ignoreCase = true) }
+                val found = allChampions.find { it.championName.normalize() == inputName.normalize() }
                 if (found != null) {
                     onGuess(found)
                     inputName = ""
@@ -232,7 +234,7 @@ fun championGuessRow(selected: Champion, goal: Champion) {
         horizontalArrangement = Arrangement.spacedBy(4.dp),
         modifier = Modifier.padding(vertical = 4.dp)
     ) {
-        championImageBox(selected.championName, selected.championName.equals(goal.championName, ignoreCase = true))
+        championImageBox(selected.championName, selected.championName.normalize() == goal.championName.normalize())
         colorBox(selected.gender, goal.gender)
         colorListBox(selected.positions, goal.positions)
         colorListBox(selected.species, goal.species)

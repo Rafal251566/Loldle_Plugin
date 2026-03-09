@@ -30,6 +30,8 @@ import kotlinx.coroutines.withContext
 import java.net.URL
 import androidx.compose.foundation.TooltipArea
 
+private fun String.normalize(): String = this.replace(" ", "").replace("'", "").lowercase()
+
 @Composable
 fun spellGameUI(service: LoldleService) {
     val randomSpell = service.randomSpell ?: return
@@ -50,7 +52,7 @@ fun spellGameUI(service: LoldleService) {
         if (!isVictory) {
             if (guesses.size >= 6) {
                 val targetChampion = allChampions.find {
-                    it.championName.equals(randomSpell.champion, ignoreCase = true)
+                    it.championName.normalize() == randomSpell.champion.normalize()
                 }
                 val positionsHint = targetChampion?.positions?.joinToString(", ") ?: "Nieznana"
 
@@ -79,7 +81,7 @@ fun spellGameUI(service: LoldleService) {
         Box(modifier = Modifier.weight(1f).fillMaxWidth(0.6f)) {
             LazyColumn(modifier = Modifier.fillMaxSize()) {
                 items(guesses.reversed()) { guessName ->
-                    val isCorrect = guessName.equals(randomSpell.champion, ignoreCase = true)
+                    val isCorrect = guessName.normalize() == randomSpell.champion.normalize()
                     SpellGuessRow(guessName, isCorrect)
                 }
             }
@@ -282,7 +284,7 @@ fun SimpleAutocompleteSearch(allNames: List<String>, alreadyGuessed: List<String
     var isMenuExpanded by remember { mutableStateOf(false) }
 
     val filtered = if (inputName.isBlank()) emptyList() else allNames.filter {
-        it.contains(inputName, ignoreCase = true) && !alreadyGuessed.contains(it)
+        it.normalize().contains(inputName.normalize()) && !alreadyGuessed.any { g -> g.normalize() == it.normalize() }
     }.take(5)
 
     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -314,7 +316,7 @@ fun SimpleAutocompleteSearch(allNames: List<String>, alreadyGuessed: List<String
         Spacer(modifier = Modifier.width(8.dp))
         Button(
             onClick = {
-                val found = allNames.find { it.equals(inputName, ignoreCase = true) }
+                val found = allNames.find { it.normalize() == inputName.normalize() }
                 if (found != null) {
                     onGuess(found)
                     inputName = ""
